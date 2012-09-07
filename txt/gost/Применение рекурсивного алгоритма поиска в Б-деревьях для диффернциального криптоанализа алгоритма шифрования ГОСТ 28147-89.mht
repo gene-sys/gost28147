@@ -1,0 +1,1158 @@
+Content-Type: multipart/related; start=<op.mhtml.1266002191785.9324b43109092a31@10.149.32.106>; boundary=----------d32VTxXCYP9ksig7geaWT6
+Content-Location: http://www.contrterror.tsure.ru/site/magazine12/08-19-Ischykova.htm
+Subject: =?utf-8?Q?=D0=9F=D1=80=D0=B8=D0=BC=D0=B5=D0=BD=D0=B5=D0=BD=D0=B8=D0=B5=20=D1=80=D0=B5=D0=BA=D1=83=D1=80=D1=81=D0=B8=D0=B2=D0=BD=D0=BE=D0=B3=D0=BE=20=D0=B0=D0=BB=D0=B3=D0=BE=D1=80=D0=B8=D1=82=D0=BC=D0=B0=20=D0=BF=D0=BE=D0=B8=D1=81=D0=BA=D0=B0=20=D0=B2=20=D0=91-=D0=B4=D0=B5=D1=80=D0=B5=D0=B2=D1=8C=D1=8F=D1=85=20=D0=B4=D0=BB=D1=8F=20=D0=B4=D0=B8=D1=84=D1=84=D0=B5=D1=80=D0=BD=D1=86=D0=B8=D0=B0=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE=20=D0=BA=D1=80=D0=B8=D0=BF=D1=82=D0=BE=D0=B0=D0=BD=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=20=D0=B0=D0=BB=D0=B3=D0=BE=D1=80=D0=B8=D1=82=D0=BC=D0=B0=20=D1=88=D0=B8=D1=84=D1=80=D0=BE=D0=B2=D0=B0=D0=BD=D0=B8=D1=8F=20=D0=93=D0=9E=D0=A1=D0=A2=2028147-89?=
+MIME-Version: 1.0
+
+------------d32VTxXCYP9ksig7geaWT6
+Content-Disposition: inline; filename=08-19-Ischykova.htm
+Content-Type: text/html; charset=windows-1251; name=08-19-Ischykova.htm
+Content-Id: <op.mhtml.1266002191785.9324b43109092a31@10.149.32.106>
+Content-Location: http://www.contrterror.tsure.ru/site/magazine12/08-19-Ischykova.htm
+Content-Transfer-Encoding: 8bit
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<link rel=Edit-Time-Data href="file:///E:/журнал/journal%2012/пример/magazine9/03-05-Kotenko.files/editdata.mso">
+<link rel=OLE-Object-Data href="file:///E:/журнал/journal%2012/пример/magazine9/03-05-Kotenko.files/oledata.mso">
+<title>Применение рекурсивного алгоритма поиска в Б-деревьях для 
+диффернциального криптоанализа алгоритма шифрования ГОСТ 28147-89</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>pivochka</o:Author>
+  <o:LastAuthor>eas</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>34</o:TotalTime>
+  <o:Created>2007-06-06T07:23:00Z</o:Created>
+  <o:LastSaved>2007-06-06T12:29:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>411</o:Words>
+  <o:Characters>2344</o:Characters>
+  <o:Company>home</o:Company>
+  <o:Lines>19</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2750</o:CharactersWithSpaces>
+  <o:Version>11.8107</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>95</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+	{font-family:Journal;
+	panose-1:2 11 114 0 0 0 0 0 0 0;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 0 0 0 5 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:left;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:left;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.4pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:red;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.1, li.1, div.1
+	{mso-style-name:"Заг 1а";
+	mso-style-parent:"Заголовок 1";
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:8.5pt;
+	text-align:justify;
+	text-indent:-8.5pt;
+	line-height:150%;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo2;
+	tab-stops:list 18.0pt left 22.7pt;
+	font-size:18.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+p.2, li.2, div.2
+	{mso-style-name:"Заг 2а";
+	mso-style-parent:"Заголовок 2";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:39.6pt;
+	text-align:justify;
+	text-indent:-21.6pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo2;
+	tab-stops:list 54.0pt;
+	font-size:16.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+p.3, li.3, div.3
+	{mso-style-name:"Заг 3а";
+	mso-style-parent:"Заголовок 2";
+	mso-style-next:"Основной текст с отступом";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:61.2pt;
+	text-align:justify;
+	text-indent:-25.2pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo2;
+	tab-stops:45.0pt list 90.0pt;
+	font-size:16.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-style:italic;}
+p.4, li.4, div.4
+	{mso-style-name:"Заг 4а";
+	mso-style-parent:"Заг 3а";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:86.4pt;
+	text-align:justify;
+	text-indent:-32.4pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l0 level4 lfo2;
+	tab-stops:list 180.0pt;
+	font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-style:italic;}
+span.a
+	{mso-style-name:"Перебор Знак";
+	mso-style-locked:yes;
+	mso-style-link:Перебор;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;}
+p.a0, li.a0, div.a0
+	{mso-style-name:Перебор;
+	mso-style-parent:"Основной текст с отступом";
+	mso-style-link:"Перебор Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	mso-list:l1 level1 lfo4;
+	tab-stops:list 18.0pt;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.a1
+	{mso-style-name:"Формула Знак";
+	mso-style-locked:yes;
+	mso-style-link:Формула;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:Формула;
+	mso-style-update:auto;
+	mso-style-link:"Формула Знак";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:right dotted 335.4pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-font-weight:bold;}
+p.a2CxSpFirst, li.a2CxSpFirst, div.a2CxSpFirst
+	{mso-style-name:ФормулаCxSpFirst;
+	mso-style-update:auto;
+	mso-style-link:"Формула Знак";
+	mso-style-type:export-only;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:right dotted 335.4pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-font-weight:bold;}
+p.a2CxSpMiddle, li.a2CxSpMiddle, div.a2CxSpMiddle
+	{mso-style-name:ФормулаCxSpMiddle;
+	mso-style-update:auto;
+	mso-style-link:"Формула Знак";
+	mso-style-type:export-only;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:right dotted 335.4pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-font-weight:bold;}
+p.a2CxSpLast, li.a2CxSpLast, div.a2CxSpLast
+	{mso-style-name:ФормулаCxSpLast;
+	mso-style-update:auto;
+	mso-style-link:"Формула Знак";
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-add-space:auto;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:right dotted 335.4pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-font-weight:bold;}
+p.BodyText2, li.BodyText2, div.BodyText2
+	{mso-style-name:"Body Text 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:1.0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.BodyPaperText, li.BodyPaperText, div.BodyPaperText
+	{mso-style-name:"Body Paper Text";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Journal;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{mso-style-name:MTDisplayEquation;
+	mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:0cm;
+	mso-pagination:widow-orphan;
+	tab-stops:center 178.0pt right 357.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:301348193;
+	mso-list-template-ids:1575629866;}
+@list l0:level1
+	{mso-level-style-link:"Заг 1а";
+	mso-level-text:"%1\. ";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:8.5pt;
+	text-indent:-8.5pt;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+@list l0:level2
+	{mso-level-style-link:"Заг 2а";
+	mso-level-text:"%1\.%2\. ";
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:39.6pt;
+	text-indent:-21.6pt;}
+@list l0:level3
+	{mso-level-style-link:"Заг 3а";
+	mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:61.2pt;
+	text-indent:-25.2pt;}
+@list l0:level4
+	{mso-level-style-link:"Заг 4а";
+	mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	margin-left:86.4pt;
+	text-indent:-32.4pt;}
+@list l0:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:234.0pt;
+	mso-level-number-position:left;
+	margin-left:111.6pt;
+	text-indent:-39.6pt;}
+@list l0:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	margin-left:136.8pt;
+	text-indent:-46.8pt;}
+@list l0:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	margin-left:162.0pt;
+	text-indent:-54.0pt;}
+@list l0:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:378.0pt;
+	mso-level-number-position:left;
+	margin-left:187.2pt;
+	text-indent:-61.2pt;}
+@list l0:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:432.0pt;
+	mso-level-number-position:left;
+	margin-left:216.0pt;
+	text-indent:-72.0pt;}
+@list l1
+	{mso-list-id:1405686072;
+	mso-list-template-ids:603856944;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:Перебор;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0BA;
+	mso-level-tab-stop:42.55pt;
+	mso-level-number-position:left;
+	margin-left:36.0pt;
+	text-indent:-2.0pt;
+	font-family:Symbol;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A0;
+	mso-level-tab-stop:62.35pt;
+	mso-level-number-position:left;
+	margin-left:62.35pt;
+	text-indent:-11.3pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:126.0pt;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	margin-left:144.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:162.0pt;
+	mso-level-number-position:left;
+	margin-left:162.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+span.font821
+	{font-family:"Times New Roman";
+	}
+table.MsoTableGrid
+	{border:1.0pt solid windowtext;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+h3
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<!--[if !mso]>
+<style>
+span.2
+	{font-weight:bold;
+	}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<font size="2">Применение </font><span style="font-size: 9pt">рекурсивного 
+алгоритма поиска в Б-деревьях для диффернциального криптоанализа алгоритма 
+шифрования ГОСТ 28147-89 </span><span
+style='font-size:9.0pt'> –<span style='mso-bidi-font-weight:
+bold'> </span></span><font size="2">Е.А. Ищукова</font></p>
+
+<div class=MsoNormal align=center style='text-align:center;mso-outline-level:
+1'>
+
+<hr size=3 width="100%" noshade color=gray align=center>
+
+</div>
+
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<b><font size="3">Е.А. Ищукова</font></b></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<font size="3">Россия, &nbsp;г. Нальчик, НИПРУ&nbsp; КБНЦ&nbsp; РАН</font></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<font size="3">&nbsp;</font></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<b><font size="3">ПРИМЕНЕНИЕ РЕКУРСИВНОГО АЛГОРИТМА ПОИСКА В Б-ДЕРЕВЬЯХ ДЛЯ 
+ДИФФЕРЕНЦИАЛЬНОГО КРИПТОАНАЛИЗА АЛГОРИТМА </font></b></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<b><font size="3">ШИФРОВАНИЯ ГОСТ 28147-89</font></b></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal">
+<span style="font-size: 10.0pt">&nbsp;</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Пожалуй, одним из наиболее значимых достижений в 
+области криптоанализа за последние годы является разработка метода 
+дифференциального криптоанализа (ДК). Наибольший резонанс данный метод получил в 
+связи с возможностью его применения для криптоанализа алгоритмов блочного 
+шифрования, в частности для алгоритма DES.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Дифференциальный криптоанализ (ДК) базируется на 
+том, что если пара текстов имеет несходство (разность) в некоторых позициях, то 
+можно проследить как оно будет изменяться в процессе прохождения через раунды 
+шифрования. Преобразование разности выполняется с некоторой вероятностью, 
+поэтому и сам метод ДК является вероятностным.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">На сегодняшний день существует довольно много 
+публикаций на тему ДК различных алгоритмов шифрования. В основном это 
+исследование алгоритма шифрования </span>
+<span lang="EN-US" style="font-size: 10.0pt">DES</span><span style="font-size: 10.0pt">. 
+Не смотря на это, до сих пор в литературе нет сведений по поводу анализа 
+алгоритма шифрования ГОСТ 28147-89.&nbsp; Встречаются лишь голословные споры о том, 
+насколько этот алгоритм будет стоек к ДК и как влияет на его стойкость то факт, 
+что в алгоритме используются заранее неизвестные блоки замены.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Алгоритм шифрования ГОСТ 28147-89 представляет 
+собой блочный алгоритм шифрования, построенный по схеме Фейстеля. Как и алгоритм 
+шифрования DES, ГОСТ преобразует 64-битовые блоки данных. Однако в отличие от 
+DES, ГОСТ использует при шифровании 256-битовый ключ, что сразу значительно 
+повышает стойкость данного алгоритма к методу полного перебора. Алгоритм состоит 
+из 32 раундов. В каждом раунде правая половина шифруемого сообщения складывается 
+с секретным подключом (сложение по модулю 2<sup>32</sup>), после чего 
+подвергается перестановке с помощью блоков замены (S-блоков) и циклически 
+сдвигается влево на 11 позиций. После этого правая и левая части сообщения 
+меняются местами.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Примечательно то, что блоки замены являются как 
+бы дополнительным ключевым материалом. То есть, они должны быть выбраны 
+произвольным образом, и использоваться в рамках одной криптографической системы. 
+Принцип выбора блоков нигде не оговорен. Поэтому до сих пор остается вопрос 
+открытым правильно ли выбирать случайным образом блоки замены, пусть и 
+секретные. Ведь неизвестно окажется ли стойким алгоритм в случае, если 
+содержимое блоков станет известным.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Известны блоки замены, которые использовались в 
+приложении для Центрального Банка РФ, однако до сих пор нет каких-либо сведений 
+об анализе алгоритма даже с имеющимися известными данными. </span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Именно потому, что блоки замены заранее 
+неизвестны, предварительный анализ алгоритма не может быть проведен заранее, как 
+это сделано для алгоритма </span><span lang="EN-US" style="font-size: 10.0pt">
+DES</span><span style="font-size: 10.0pt">. А в случае, если блоки замены 
+все-таки станут известны аналитику в силу каких-то причин, то первым делом 
+необходимо будет провести их анализ для выявления наиболее вероятного значения 
+разности. Так как одним из основных свойств информации является своевременность, 
+то анализ должен быть проведен как можно быстрее. Поэтому имеет смысл 
+использовать многопроцессорные вычисления для достижения скорейшего результата.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Алгоритм шифрования ГОСТ 28147-89 оперирует 
+64-битовыми блоками данных и построен по схеме Фейстеля, что означает разбиение 
+исходного блока на две части по 32 бита. Таким образом, в общей сложности 
+существует 2<sup>64</sup> вариантов входных разностей, которые могут поступить 
+на вход алгоритма ГОСТ 28147-89. Каждая из входных разностей на выходе может 
+дать огромное число выходных разностей с различными вероятностями. При этом 
+решением задачи будет являться пара значений входная-выходная разность, имеющая 
+максимальное значение вероятности. Естественно, что из анализа следует исключить 
+значение входной разности, равное нулю, итак как оно с вероятностью р=1 даст на 
+выходе значение разности, равное нулю, а значит будет иметь максимальное 
+значение вероятности.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Ветвящаяся структура от раунда к раунду сходна с 
+построением Б-деревьев. Подробно Б-деревья рассмотрены в [1]. Ниже 
+сформулировано определение Б-дерева, и показано его отношение к рассматриваемой 
+задаче.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Б-деревом называется корневое дерево, устроенное 
+следующим образом.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Каждая вершина дерева содержит поля, в которых хранится:</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt; font-family: Symbol">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 10.0pt">количество </span>
+<span lang="EN-US" style="font-size: 10.0pt">n</span><span style="font-size: 10.0pt">[</span><span lang="EN-US" style="font-size: 10.0pt">x</span><span style="font-size: 10.0pt">] 
+ключей, хранящихся в ней (т.е.&nbsp; в рассматриваемой задаче </span>
+<span lang="EN-US" style="font-size: 10.0pt">n</span><span style="font-size: 10.0pt">[х] 
+– это возможное количество выходных разностей одного раунда при конкретной 
+входной разности);</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt; font-family: Symbol">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 10.0pt">сами ключи (то есть сами значения 
+разностей);</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt; font-family: Symbol">-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 10.0pt">булевское значение </span>
+<span lang="EN-US" style="font-size: 10.0pt">leaf</span><span style="font-size: 10.0pt">[</span><span lang="EN-US" style="font-size: 10.0pt">x</span><span style="font-size: 10.0pt">], 
+истинное, когда вершина х является листом (в данном случае листьями будут 
+являться выходы последнего раунда шифрования).</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Если х – внутренняя вершина, то она также содержит n[x]+1 указателей на 
+ее детей. У листьев нет полей, поэтому эти поля для них не определены.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Все листья находятся на одной и той же глубине (равной высоте h дерева, 
+то есть равной рассматриваемому числу раундов шифрования).</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Прежде чем перейти к рассмотрению алгоритма 
+поиска в Б-дереве, обозначим некоторые особенности проводимого анализа. Для 
+любого заполнения таблиц замены в алгоритме шифрования ГОСТ 28147-89 никогда не 
+появится ненулевое значение входной разности, которое бы давало на выходе 
+значение нулевой разности. Поэтому &nbsp;единственным способом проскочить через один 
+раунд шифрования с вероятностью р=1 так, чтобы левая часть входной разности 
+совпала со значением разности на выходе функции шифрования </span>
+<span lang="EN-US" style="font-size: 10.0pt">F</span><span style="font-size: 10.0pt"> 
+первого раунда шифрования. В этом случае на вход функции </span>
+<span lang="EN-US" style="font-size: 10.0pt">F</span><span style="font-size: 10.0pt"> 
+второго раунда шифрования поступит значение, равное нулю, что позволит пройти 
+один раунд шифрования без изменения значения общей вероятности. </span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Поэтому для поиска наиболее вероятных пар 
+разностей нет смысла перебирать все 2<sup>64</sup> комбинации входных разностей. 
+Достаточно перебрать 2<sup>32</sup> значений правой части входной разности, а 
+значение левой части входной разности полагать равным вероятному выходу функции
+</span><span lang="EN-US" style="font-size: 10.0pt">F</span><span style="font-size: 10.0pt"> 
+первого раунда. В этом случае получается, что второй раунд преобразования 
+разностей будет иметь значение вероятности р=1, а значит не будет оказывать 
+влияния на значение общей вероятности.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Поиск пар разностей будет проводиться в 
+соответствии с пороговым значением вероятности. Существует два пути задания 
+порогового значения вероятности. Первый – это задание напрямую. В этом случае в 
+результате поиска будут найдены все пары разностей, вероятности которых не ниже 
+заданного порогового значения.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Второй путь – это динамическое изменение 
+значения пороговой вероятности. В этом случае начальное значение порога 
+принимается равным нулю. В процессе поиска определяется очередная пара входная – 
+выходная разность. И если вероятность р этой пары больше порогового значения, то 
+пороговая вероятность переопределяется и становится равной значению р. При таком 
+подходе будут найдены все пары разностей, имеющие максимальные значения 
+вероятностей из всего диапазона поиска.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Если говорить в общем, то поиск в Б-дереве похож 
+на поиск в двоичном дереве. Разница заключается в том, что в каждой вершине 
+выбирается один вариант из </span><span lang="EN-US" style="font-size: 10.0pt">n</span><span style="font-size: 10.0pt">[х], 
+а не из двух. Рекурсивная процедура поиска в Б-дереве получает на вход указатель 
+на корень поддерева и ключ, который мы ищем в данном поддереве [1]. В нашей 
+задаче ключом будет являться значение вероятности. Если при вызове рекурсивной 
+процедуры будет получено значение вероятности, не превышающее пороговое 
+значение, то процедура будет возвращать указатель на следующий уровень дерева, в 
+противном случае должен происходить возврат и поиск по другой ветке. Если поиск 
+для вершины х не дал желаемого результата ни по одному ветвлению, то тогда надо 
+осуществить переход на предыдущий уровень. Поиск продолжается до тех пор, пока 
+не будут проверены все ветви корня дерева.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Для детализации алгоритма необходимо ввести 
+несколько структур данных, которые позволят легко и просто координировать 
+движение по дереву и не терять полученные результаты. Исходными данными для 
+анализа являются </span><span lang="EN-US" style="font-size: 10.0pt">S</span><span style="font-size: 10.0pt"> 
+блоки замены алгоритма. Анализ начинается с их изучения и построения таблиц 
+зависимости значений выходных разностей </span>
+<span style="font-size: 10.0pt; font-family: Symbol">D</span><span style="font-size: 10.0pt">С 
+от значений входных разностей </span>
+<span style="font-size: 10.0pt; font-family: Symbol">D</span><span style="font-size: 10.0pt">А. 
+В результате анализа будут сформированы таблицы, имеющие 16 строк (возможные 
+значения входных разностей) и 16 столбцов (возможные значения выходных 
+разностей). На основании полученных таблиц формируем структуру данных </span>
+<span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">S</span><span style="font-size: 10.0pt">, 
+которая представляет собой трехмерный массив. Первый элемент массива имеет 8 
+возможных значений и обозначает номер блока замены. Для каждого из блоков замены 
+есть 16 возможных значений входной разности – это второй индекс массива. Для 
+каждой входной разности есть возможные выходные разности. Минимум – это одно 
+значение (как, например, для входной разности, равной нулю), максимум – восемь 
+(так как каждое значение выходной разности должно дублироваться, а всего 
+возможных выходов – 16). Поэтому для каждого значения входной разности 
+определяем запись из 9 элементов. Первый элемент определяет количество ненулевых 
+выходных разностей, соответствующих данной входной. Остальные элементы – сами 
+значения выходных разностей.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Структура </span>
+<span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">S</span><span style="font-size: 10.0pt"> 
+по своей сути дублирует таблицы анализа. Однако содержит в себе только значимые 
+элементы. Так как целью ставится полный поиск, то использование структуры 
+подобного типа избавит от многочисленных сравнений в таблицах анализа при поиске 
+очередного возможного значения выходной разности, что как следствие приведет к 
+значительному сокращению времени анализа.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Следующая определяемая структура – это структура
+</span><span lang="EN-US" style="font-size: 10.0pt">mas</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt">, 
+показывающая текущее состояние указателей каждого уровня дерева. Первый индекс 
+этой структуры меняется от 1 до 32 (по количеству раундов алгоритма шифрования) 
+и указывает на двумерный массив. Этот массив состоит из 8 строк (по количеству 
+блоков замены) и двух столбцов. Первый столбец показывает текущее значение 
+входной разности, а второй – номер выходной разности в массиве </span>
+<span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">S</span><span style="font-size: 10.0pt">. 
+По своей сути, массив </span><span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">mas</span><span style="font-size: 10.0pt"> 
+определяет многообразие вершин Б-дерева.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Введем еще несколько обозначений. Пусть массив
+</span><span lang="EN-US" style="font-size: 10.0pt">mas</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">razn</span><span style="font-size: 10.0pt"> 
+представляет собой массив разностей для каждого уровня. Так как оперируем 
+32-битными половинками, то общее количество элементов этого массива будет равно 
+числу раундов, умноженному на 2. Аналогично массиву разностей определим массив 
+вероятностей, в который будут заноситься вероятности текущего раунда. Таким 
+образом, получается, что данный массив будет содержать столько элементов, 
+сколько раундов будет подвергнуто анализу (то есть максимум 32).</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Кроме того, пусть</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">porog</span><span style="font-size: 10.0pt">&nbsp; 
+– пороговое значение вероятности;</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">All</span><span style="font-size: 10.0pt"> 
+– общее значение вероятности (т.е. для совокупности раундов);</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span lang="EN-US" style="font-size: 10.0pt">kol</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt"> 
+– общее количество раундов;</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span lang="EN-US" style="font-size: 10.0pt">tek</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt"> 
+– текущий раунд.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Тогда алгоритм поиска можно сформулировать 
+следующим образом:</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Берется очередное значение входной разности&nbsp; </span>
+<span lang="EN-US" style="font-size: 10.0pt">dXL</span><span style="font-size: 10.0pt">,
+</span><span lang="EN-US" style="font-size: 10.0pt">dXR</span><span style="font-size: 10.0pt"> 
+(вершина Б-дерева).</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Пороговое значение вероятности полагается равным 0: </span>
+<span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">porog</span><span style="font-size: 10.0pt">=0.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang="EN-US" style="font-size: 10.0pt">Tek</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt">=1.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Заполняется двумерный массив структуры </span>
+<span lang="EN-US" style="font-size: 10.0pt">mas</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt"> 
+для раунда </span><span lang="EN-US" style="font-size: 10.0pt">tek</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt">. 
+Значение входной разности определяется по входной разности </span>
+<span lang="EN-US" style="font-size: 10.0pt">dXR</span><span style="font-size: 10.0pt">. 
+Значение очередной выходной разности – по структуре </span>
+<span lang="EN-US" style="font-size: 10.0pt">ind</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">S</span><span style="font-size: 10.0pt">.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Вычисляется значение раундовой вероятности Р.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span lang="EN-US" style="font-size: 10.0pt">6.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 10.0pt">Если</span><span lang="EN-US" style="font-size: 10.0pt"> 
+tek_round=0, </span><span style="font-size: 10.0pt">то</span><span lang="EN-US" style="font-size: 10.0pt"> 
+P_All=P, </span><span style="font-size: 10.0pt">иначе</span><span lang="EN-US" style="font-size: 10.0pt"> 
+P_All=mas_P[tek_round-1]*P.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">7.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Заносим текущие значения разностей:</span></p>
+<p class="MsoNormal" align="center" style="line-height: normal">
+<span lang="EN-US" style="font-size: 10.0pt">mas_razn[tek_round*2]=dXL;</span></p>
+<p class="MsoNormal" align="center" style="line-height: normal">
+<span lang="EN-US" style="font-size: 10.0pt">mas_razn[tek_round*2+1]=dXR.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">8.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Если </span><span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">All</span><span style="font-size: 10.0pt">&gt;</span><span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">porog</span><span style="font-size: 10.0pt">, 
+то переходим к пункту 9, иначе к пункту 12.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">9.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Процедура определения выходного значения разности </span>
+<span lang="EN-US" style="font-size: 10.0pt">dXL</span><span style="font-size: 10.0pt">,
+</span><span lang="EN-US" style="font-size: 10.0pt">dXR</span><span style="font-size: 10.0pt"> 
+с заполнением соответствующих структур. </span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">10.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span></span><span lang="EN-US" style="font-size: 10.0pt">tek_round</span><span style="font-size: 10.0pt">=</span><span lang="EN-US" style="font-size: 10.0pt">tek_round</span><span style="font-size: 10.0pt">+1.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">11.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span>Если </span><span lang="EN-US" style="font-size: 10.0pt">tek</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt">=</span><span lang="EN-US" style="font-size: 10.0pt">kol</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt">, 
+то переопределение порогового значения разности (</span><span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">porog</span><span style="font-size: 10.0pt">=</span><span lang="EN-US" style="font-size: 10.0pt">P</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">All</span><span style="font-size: 10.0pt">), 
+вывод найденной пары разностей и переход к пункту 13.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">12.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span>Переход к пункту 4.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">13.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span></span><span lang="EN-US" style="font-size: 10.0pt">
+tek_round=tek_round-1.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">14.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span>Если </span><span lang="EN-US" style="font-size: 10.0pt">tek</span><span style="font-size: 10.0pt">_</span><span lang="EN-US" style="font-size: 10.0pt">round</span><span style="font-size: 10.0pt">&lt;1, 
+то переход к пункту 17.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">15.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span>Если есть еще не проанализированные выходы для данной входной разности, 
+то переход к следующему значению, иначе переход к пункту 13.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">16.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span>Возврат к&nbsp; пункту 5.</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">17.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span>Если все варианты входных разностей проанализированы, то конец работы 
+алгоритма, иначе – переход к пункту 1.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Разработанный алгоритм представляет собой 
+рекурсивный алгоритм поиска наиболее вероятных пар для проведения ДК алгоритма 
+шифрования ГОСТ 28147-89. </span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Выше было сделано предложение использования 
+параллельных распределенных вычислений при проведении метода ДК к анализу 
+алгоритма ГОСТ 28147-89. Как правило, в таких случаях используется набор 
+одинаковых параллельных программ, которые одновременно выполняются на нескольких 
+процессорах. Работой всех процессоров управляет главный процесс. В рамках 
+решения задачи проведения ДК алгоритма шифрования ГОСТ 28147-89 необходимо 
+решить следующие основные задачи:</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">–<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span>провести предварительный анализ и выявить наиболее вероятностные пары 
+разностей;</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">–<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span>из общего массива данных найти правильные пары текстов (то есть такие 
+пары текстов, которые удовлетворяют выбранной паре разностей);</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">–<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span>определить возможные значения битов искомого подключа;</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify; margin-left: 0cm">
+<span style="font-size: 10.0pt">–<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span>объединить результаты анализа, и выявить искомый секретный подключ.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Итак, первой задачей, которую решает главный 
+процесс, является задача равномерного распределения данных между всеми 
+процессами, участвующими в вычислениях. При этом необходимо учитывать, что 
+минимально возможное число процессов – один (он же и будет являться главным), а 
+максимальное число процессов теоретически неограниченно. </span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Для распределения данных будем использовать 
+следующий алгоритм:</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Если 0 &#8804; rank &lt; Po (процессы, на которые 
+распространяется распределение остатка):</span></p>
+<p class="MsoNormal" align="center" style="text-indent: 21.25pt; line-height: normal">
+<span lang="EN-US" style="font-size: 10.0pt">Db = rank*Pc+ rank;</span></p>
+<p class="MsoNormal" align="center" style="text-indent: 21.25pt; line-height: normal">
+<span lang="EN-US" style="font-size: 10.0pt">De = Db+ Pc</span><span style="font-size: 10.0pt">.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span lang="EN-US" style="font-size: 10.0pt">&nbsp;</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Если rank &#8805; Po (процессы, на которые не 
+распространяется распределение остатка):</span></p>
+<p class="MsoNormal" align="center" style="text-indent: 21.25pt; line-height: normal">
+<span lang="EN-US" style="font-size: 10.0pt">Db = rank*Pc+ Po;</span></p>
+<p class="MsoNormal" align="center" style="text-indent: 21.25pt; line-height: normal">
+<span lang="EN-US" style="font-size: 10.0pt">De</span><span style="font-size: 10.0pt"> 
+= </span><span lang="EN-US" style="font-size: 10.0pt">Db</span><span style="font-size: 10.0pt">+ 
+(</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt"> 
+– 1),</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">&nbsp;</span></p>
+<p class="MsoNormal" style="line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Где &nbsp;Db – начало диапазона анализа;</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">De – конец диапазона анализа;</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">rank – номер процесса, для которого вычисляется 
+диапазон анализа;</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Pc – целая часть от деления общего числа текстов 
+для анализа на число процессов, участвующих в вычислениях;</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">n – число процессов, участвующих в вычислениях;</span></p>
+<p class="MsoNormal" style="text-indent: 19.95pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Po – остаток от деления общего числа текстов для 
+анализа на число процессов, участвующих в вычислениях.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Пусть </span><b>
+<span lang="EN-US" style="font-size: 10.0pt">k</span><span style="font-size: 10.0pt">0</span></b><span style="font-size: 10.0pt"> 
+– начало диапазона анализа, а </span><b>
+<span lang="EN-US" style="font-size: 10.0pt">k</span></b><span style="font-size: 10.0pt"> 
+– его конец. Тогда значение </span><b>
+<span lang="EN-US" style="font-size: 10.0pt">Pc</span></b><span style="font-size: 10.0pt">, 
+равное целой части от деления разности конца и начала диапазона анализа <b>(</b></span><b><span lang="EN-US" style="font-size: 10.0pt">k</span><span style="font-size: 10.0pt"> 
+– </span><span lang="EN-US" style="font-size: 10.0pt">k</span><span style="font-size: 10.0pt">0)</span></b><span style="font-size: 10.0pt"> 
+на число процессов </span><b><span lang="EN-US" style="font-size: 10.0pt">n</span></b><span style="font-size: 10.0pt">, 
+участвующих в вычислениях, будет определять количество разностей, которое 
+необходимо проанализировать каждому из процессов. Так как диапазон анализа не 
+всегда будет делиться на число процессов нацело, то в результате деления может 
+образоваться </span><b><span lang="EN-US" style="font-size: 10.0pt">Po</span></b><span style="font-size: 10.0pt">, 
+который также необходимо подвергнуть анализу. </span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Таким образом, всем процессам, чей номер меньше 
+значения остатка, необходимо будет проанализировать данные, начиная со значения&nbsp;
+<b>(</b></span><b><span lang="EN-US" style="font-size: 10.0pt">rank</span><span style="font-size: 10.0pt">*</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt"> 
++ </span><span lang="EN-US" style="font-size: 10.0pt">rank</span><span style="font-size: 10.0pt">)</span></b><span style="font-size: 10.0pt"> 
+и заканчивая значением <b>(</b></span><b><span lang="EN-US" style="font-size: 10.0pt">rank</span><span style="font-size: 10.0pt">*</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt"> 
++ </span><span lang="EN-US" style="font-size: 10.0pt">Po</span><span style="font-size: 10.0pt">+</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt">)</span></b><span style="font-size: 10.0pt">,&nbsp; 
+где </span><span lang="EN-US" style="font-size: 10.0pt">rank</span><span style="font-size: 10.0pt"> 
+– номер текущего процесса. Для всех же остальных значений поиск будет начинаться 
+со значения <b>(</b></span><b><span lang="EN-US" style="font-size: 10.0pt">rank</span><span style="font-size: 10.0pt">*</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt"> 
++ </span><span lang="EN-US" style="font-size: 10.0pt">Po</span><span style="font-size: 10.0pt">)</span></b><span style="font-size: 10.0pt">&nbsp; 
+и заканчиваться значением <b>(</b></span><b><span lang="EN-US" style="font-size: 10.0pt">rank</span><span style="font-size: 10.0pt">*</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt">+</span><span lang="EN-US" style="font-size: 10.0pt">Po</span><span style="font-size: 10.0pt">+</span><span lang="EN-US" style="font-size: 10.0pt">Pc</span><span style="font-size: 10.0pt">-1).</span></b></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">На основании разработанных алгоритмов, 
+реализована программа, позволяющая проводить поиск наиболее вероятных значений 
+разностей для любых комбинаций </span>
+<span lang="EN-US" style="font-size: 10.0pt">S</span><span style="font-size: 10.0pt">-блоков 
+замены в алгоритме шифрования ГОСТ 28147-89. Основой использования 
+распределенных вычислений могут служить современные пакеты прикладных программ 
+для кластерных систем. В данной работе в качестве такого пакета был выбран пакет
+</span><span lang="EN-US" style="font-size: 10.0pt">MPICH</span><span style="font-size: 10.0pt"> 
+1.2.5, разработанный на основе стандарта «Интерфейса передачи сообщений» (Message 
+Passing Interface, или, сокращенно MPI) за свою многоплатформенность, удобный 
+интерфейс, гибкую конфигурацию и легкую переносимость с одной вычислительной 
+машины на другую.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal; text-align: justify">
+<span style="font-size: 10.0pt">Экспериментальное опробование программы было 
+проведено на 16-процессорном кластере и показало практически линейный рост 
+ускорения производительности при увеличении числа используемых процессоров.</span></p>
+<p class="MsoNormal" align="right" style="text-align: right; text-indent: 21.25pt; line-height: normal">
+<span style="font-size: 10.0pt">Работа поддержана грантом РФФИ № 06-07-89010 - 
+а.</span></p>
+<p class="MsoNormal" style="text-indent: 21.25pt; line-height: normal">
+<span style="font-size: 10.0pt">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align: center; line-height: normal">
+<span style="font-size: 9.0pt; text-transform: uppercase">Библиографический 
+список</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span style="font-size: 9.0pt">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span></span><i><span style="font-size: 9.0pt">Кормен Т., Лейзерсон Ч., Ривест 
+Р.,</span></i><span style="font-size: 9.0pt"> Алгоритмы: построение и анализ. – 
+М.: МЦНМО, 2001. – 960 с.</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span style="font-size: 9.0pt">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span></span><i><span lang="EN-US" style="font-size: 9.0pt">E</span><span style="font-size: 9.0pt">.
+</span><span lang="EN-US" style="font-size: 9.0pt">Biham</span><span style="font-size: 9.0pt">,
+</span><span lang="EN-US" style="font-size: 9.0pt">A</span><span style="font-size: 9.0pt">.
+</span><span lang="EN-US" style="font-size: 9.0pt">Shamir</span></i><span style="font-size: 9.0pt">: 
+“</span><span lang="EN-US" style="font-size: 9.0pt">Differential</span><span lang="EN-US" style="font-size: 9.0pt">
+</span><span lang="EN-US" style="font-size: 9.0pt">Cryptanalysis</span><span lang="EN-US" style="font-size: 9.0pt">
+</span><span lang="EN-US" style="font-size: 9.0pt">of</span><span lang="EN-US" style="font-size: 9.0pt">
+</span><span lang="EN-US" style="font-size: 9.0pt">the</span><span lang="EN-US" style="font-size: 9.0pt">
+</span><span lang="EN-US" style="font-size: 9.0pt">Full</span><span style="font-size: 9.0pt"> 
+16-</span><span lang="EN-US" style="font-size: 9.0pt">round</span><span lang="EN-US" style="font-size: 9.0pt">
+</span><span lang="EN-US" style="font-size: 9.0pt">DES</span><span style="font-size: 9.0pt">”,
+</span><span lang="EN-US" style="font-size: 9.0pt">Crypto</span><span style="font-size: 9.0pt">'92,
+</span><span lang="EN-US" style="font-size: 9.0pt">Springer</span><span style="font-size: 9.0pt">-</span><span lang="EN-US" style="font-size: 9.0pt">Velgar</span><span style="font-size: 9.0pt">, 
+1998, </span><span lang="EN-US" style="font-size: 9.0pt">p</span><span style="font-size: 9.0pt">.487</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span lang="EN-US" style="font-size: 9.0pt">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span></span><i><span lang="EN-US" style="font-size: 9.0pt">E</span><span style="font-size: 9.0pt">.
+</span><span lang="EN-US" style="font-size: 9.0pt">Biham</span><span style="font-size: 9.0pt">,
+</span><span lang="EN-US" style="font-size: 9.0pt">A. Shamir</span></i><span lang="EN-US" style="font-size: 9.0pt">: 
+“Differential Cryptanalysis of DES-like Cryptosystems”, Extended Abstract, 
+Crypto'90, Springer-Velgar, 1998, p.2</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span style="font-size: 9.0pt">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span></span><i><span style="font-size: 9.0pt">Шнайер Б.,</span></i><span style="font-size: 9.0pt"> 
+Прикладная криптография. Протоколы, алгоритмы, исходные тексты на языке Си. – 
+М.: Изд-во ТРИУМФ, 2002.</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span style="font-size: 9.0pt">5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span></span><i><span style="font-size: 9.0pt">Столлингс В.,</span></i><span style="font-size: 9.0pt"> 
+Криптография и защита сетей: принципы и практика, 2-е изд.: Пер. с англ. – М,: 
+Изд-во дом «Вильямс», 2001.</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span style="font-size: 9.0pt">6.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span></span><i><span style="font-size: 9.0pt">Грушо А.А., Тимонина Е.Е., 
+Применко Э.А.</span></i><span style="font-size: 9.0pt"> Анализ и синтез 
+криптоалгоритмов. Курс лекций. Йошкар-Ола, Изд-о МФ МОСУ, 2000.</span></p>
+<p class="MsoNormal" style="text-indent: 18.0pt; line-height: normal; margin-left: 0cm">
+<span style="font-size: 9.0pt">7.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;
+</span></span><i><span style="font-size: 9.0pt">Бабенко Л.К. Ищукова Е.А</span></i><span style="font-size: 9.0pt">. 
+Современные алгоритмы блочного шифрования и методы их анализа –&nbsp; М.: «Гелиос АРВ», 
+2006. </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  height:28.2pt'>
+  <td valign=top style='padding:0cm 0cm 0cm 0cm;height:28.2pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Verdana'>
+	<a href="08-18-Menschov.htm">Предыдущая статья</a> | </span><strong>Статья 21</strong>
+  | <span style='font-size:10.0pt;font-family:Verdana'>
+	<a href="08-20-Golubchikov.htm">Следующая статья</a> | <a href="soder.htm">Содержание</a></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><u8:p><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+------------d32VTxXCYP9ksig7geaWT6--

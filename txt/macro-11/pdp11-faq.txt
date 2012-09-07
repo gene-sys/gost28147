@@ -1,0 +1,1999 @@
+The PDP-11 FAQ
+
+
+Introduction
+     The PDP-11 was, and is, an extremely successful and influential
+     family of machines which has spanned over two decades from the early
+     1970s through the mid 1990s. This note is an attempt to gather
+     some of the knowledge on this family and present it for the benefit
+     of those who are enthusiasts, curious, or downright confused as to
+     what the -11 was and is, and how it related and still relates to its
+     world.
+
+     The information presented is compiled from the memory and
+     notebooks of both myself and a number of people who have filled in
+     the many gaps in my memory or set me straight on certain details.
+     Feel free to mail any of the maintainers at faq11@village.org
+     with any data you feel should be included, corrected or updated.
+
+Contents
+
+- What is a PDP?
+- What is a PDP-11?
+- What different PDP-11 models were made?
+- Differences between the 11/70 and the 11/83, 11/93.
+- Other fun PDP11's.
+- The Never 11's
+- Non-DEC 11's
+- Part Number Format
+- PDP-11 Relative Performance
+- What operating systems were written for the PDP-11?
+- What programming languages are supported on the PDP-11?
+- Memory address convention (for this FAQ), and the GPRs
+- What is the PDP-11 instruction set?
+- The PDP-11 Maintenance Panel and front panel 
+- Trivia/Humour/Stories
+- Who's Who?
+- Mark Crispin's 1986 list of PDP's 
+- Appendix A: Related FAQ Sites
+- Appendix B: Where can I buy [whatever] for my PDP-11?
+- Editors/Maintainers of the PDP-11 FAQ
+- Revision History
+
+========================================================
+What is a PDP?
+Extracted from the PDP-8 FAQ By Doug Jones.  Used with his permission.
+
+Digital Equipment Corporation (DEC) was founded in 1957, with
+facilities in an old woolen mill in Maynard Massachusetts; at first,
+they sold transistorized "systems modules", plug-in circuit boards
+with a few transistorized logic gates per board.  Starting in 1960,
+though, DEC began to experiment with selling computers; by 1961, they
+had sold enough that DECUS, the Digital Equipment Computer User's
+Society was founded.
+
+DEC's first computer, the PDP-1, sold for only $120,000 at a time
+when other computers sold for over $1,000,000.  Everyone (the
+government and DEC's stockholders included) knew that computers were
+big and expensive and needed a computer center and a large staff; DEC
+chose to avoid dealing with these stereotypes by entirely avoiding the
+term "computer"; thus, for over a decade, all digital computers sold
+by DEC were called Programmed Data Processors (PDPs).  In early DEC
+documentation, plural form "PDPs" is used as a generic term for all
+DEC computers. [Ken Olsen claimed that the board of directors would
+not let him call the machines computers because some contemporary
+study had predicted that the world market for computers would be very
+small - less than 100 if memory serves.  They were mollified with
+Programmed Data Processor, however, and PDP lives to this
+day. -MMcC]
+
+DEC built a number of different computers under the PDP label, with
+a huge range of price and performance.  The largest of these are fully
+worthy of large computer centers with big support staffs.  Many early
+DEC computers were not really built by DEC.  With the PDP-3 and LINC,
+for example, customers built the machines using DEC parts and
+facilities.  Here is the list of PDP computers:
+
+    MODEL  DATE  PRICE     BITS  COMMENTS
+    =====  ====  ========  ====  =====
+    PDP-1  1960  $120,000  18    DEC's first computer
+    PDP-2            NA    24    Never built?
+    PDP-3                  36    One was built by a customer, none by DEC.
+    PDP-4  1962            18    Predecessor of the PDP-7.
+    PDP-5  1963   $27,000  12    The ancestor of the PDP-8.
+    PDP-6  1964  $120,000  36    A big computer; 23 built, most for MIT.
+    PDP-7  1965  ~$60,000  18    Widely used for real-time control.
+    PDP-8  1965   $18,500  12    The smallest and least expensive PDP.
+    PDP-9  1966   $35,000  18    An upgrade of the PDP-7.
+    PDP-10 1967  $186,500  36    A PDP-6 successor, great for timesharing.
+    PDP-11 1970   $10,800  16    DEC's first and only 16 bit computer.
+    PDP-12 1969   $27,900  12    A PDP-8 relative.
+    PDP-13           NA          Bad luck, there was no such machine.
+    PDP-14                       A ROM-based programmable controller.
+    PDP-15 1970   $16,500  18    A TTL upgrade of the PDP-9.
+    PDP-16 1972 $.8-$4,000 NA    8/16  A register-transfer module system.
+
+Corrections and additions to this list are welcome!  The prices
+given are for minimal systems in the year the machine was first
+introduced.  The bits column indicates the word size.  Note that
+the DEC PDP-10 became the DECSYSTEM-20 as a result of marketing
+considerations, and DEC's VAX series of began as the Virtual
+Address eXtension of the never-produced PDP-11/78.
+
+It is worth mentioning that it is generally accepted that the Data
+General Nova was originally developed as the PDP-X, a 16-bit
+multi-register version of the PDP-8.  A prototype PDP-X was built at
+DEC before the design was rejected.  This and a competing 16-bit
+design were apparently submitted to Harold McFarland at Carnegie-Mellon
+University for evaluation; McFarland (and perhaps Gordon Bell, who was
+at C-MU at the time) evaluated the competing designs and rejected both
+in favor of what we know as the PDP-11.  (A less common version of
+this story is that the reason that DEC never produced a PDP-13 was
+because the number 11 was assigned to what became the Nova; this is
+unlikely because the PDP-X prototype came before the PDP-11.)  Both
+DEC and Data General are quiet about these stories.
+
+Today, all of the PDP machines are in DEC's corporate past, with the
+exception of the PDP-11 family of minicomputers and microprocessors.
+
+Of course, occasionally, some lab builds a machine out of DEC
+hardware and calls it a PDP with a new number.  For example, the
+Australian Atomic Energy Commission once upgraded a PDP-7 by adding
+a PDP-15 on the side; they called the result a PDP-22.  See Mark
+Crispin's 1986 list of PDP's elsewhere in this document.
+
+========================================================
+What is a PDP-11?
+Evolution of the PDP-11 family of computers.
+
+During the late 1960s DEC had built a successful business based mainly
+on the success of its 12-bit PDP-8 series of minicomputers.  However,
+the time had come for the introduction of a 16-bit machine to
+replace/supercede the -8. Edison DeCastro designed a 16-bit machine,
+but after a disagreement left DEC, formed DG, and built the initial
+success of that company on his 16-bit NOVA. There was much rancor
+surrounding the events of DeCastro leaving DEC and setting up
+DG. Stories abound as to the reasons of the bitterness, but I have
+never been able to get an authoritative source to confirm what really
+happened.
+
+DEC eventually countered with its entry into this market segment -
+the PDP 11/20. This machine was to father a whole industry; lay the
+foundations on which the VAX would later be built; and virtually
+launch the OEM industry attracted to the connectability and
+extendability of the UNIBUS, and later, Q-Bus. Indeed, Computer
+Engineering by Bell/Munge/McMcNamara refers to the VAX-11/780 as being
+another -11 rather than the start of a new and different family. The
+early VAXes, of course, had PDP-11 compatability mode built in, and
+many VMS utilities were taken from RSX and run in compatability mode
+for a number of years until eventually replaced by native mode
+utilities sometime around VMS V3.0.
+   
+Since then, the PDP-11 had 16 to 22 implementations, depending on
+how you count them, many with variants. The following attempts to
+briefly track the evolution and progression.
+
+In 1969 the -11 family was projected as follows:
+
+   Model  CPU   Comments
+   ------ ----- ----------------------------------------
+   11/20  KA11  Origin of the species 1x performance.
+   11/10   -    .7 of the 11/20, technologically cost reduced 11/20 in
+                MOS. [This obviously became the 11/05, 11/10]
+   11/30  KA11  [Seems to have been the same as an 11/20 packaged with a
+                little more memory, etc. I believe this is what
+                eventually became the 11/20 that actually shipped]
+   11/40  KB11  2x performance. 
+   11/45  KB11  2x performance. [Seems to have been intended to be an 11/40
+                with MMU. [Looks like this became the 11/40 that
+                eventually shipped.]
+   11/50  KC11  2x performance. Hardware floating point 32 bit
+                processor.  [I believe the 32 bit refers to the FPU!]
+   11/55  KC11  2x performance. With MMU. [It looks like the 11/50 plus 11/55
+                became the eventual 11/45]
+   11/65  KD11  4x performance. 32 bit seperate memory bus, 32 bit processor.
+
+It is interesting to note how things progressed in reality.
+Technology allowed, and the market drove, the production, within a
+couple of years, of machines considerably in advance of what was
+envisaged on April 3 1969. It is also interesting to note that some
+people were already thinking 32 bits!
+
+========================================================
+What different PDP-11 models were made?
+
+- Jun 1970:
+     11/20, 11/15 born. Small Scale integration. 4 or 8k words
+     mem, 28k max. (Some documentation referred to 32k max memory, but
+     the top 4k was reserved for the I/O space. Machines with 28 KW core
+     were rare, and most were shipped with 4 KW or 8 KW). Magnetic Core
+     Memory.  TTY ASR33 console. Papertape reader/punch typical I/O.
+     Clock State cpu control.  [All subsequent PDP-11 machines were to
+     be microcoded]. The processor boards, all 15+(?) of them plugged
+     into a 3 bank 4 x 6 slot backplane. Each 4 KW of memory occupied a
+     further 4 x 6 slot backplane with some 13(?) modules. There was
+     room in the 11" CPU drawer for three or four (?) such backplanes.
+
+     Q: Why has the 11/20 18 bit addresses on the UNIBUS but only a
+     CPU capable of handling 16 address bits ?)
+
+     A: Because it was always intended to provide an MMU option to
+     allow for extended addressing.
+
+     No matter what memory configurations, 16 bit, 18 bit or 22
+     bit were to be employed throughout the life of the PDP-11 family,
+     the top 8 KB were always reserved for I/O addresses, registers, etc.
+     In particular (list provided by Megan Gentry):
+
+     - The I/O page is 8 KB standard
+     - Some systems (PDT) have 4 KB I/O pages
+     - Some systems can be configured for 4 KB I/O pages
+     - There is a quirk in the memory management units
+       which cause the microcode to assume an 8 KB I/O page
+       regardless of the jumper configuration - so, if you have a
+       system configured for a 4 KB I/O page and turn on the memory
+       management unit, the system will suddenly think it has an 8 KB
+       I/O page.  This can cause, for example, RT-11XM to go south
+       really quickly.
+     - The address of the I/O page (8 KB) is, on 16-bit systems,
+       160000.  On 18-bit systems, 760000.  And on 22-bit systems,
+       17760000.
+
+- Jun 1972
+     11/45. This was the first of the highspeed processors that begat
+     11/50, 11/55 and 11/70. 11/45 was microcoded, SSI/MSI, memory
+     bus, core, MOS or bipolar memory. Max Memory 256 KB addressable
+     via optional 18 bit Memory management unit. Optional Floating
+     Point Unit. 11/55 had special bipolar high speed mem. Fast
+     peripheral to memory slots Split I&D spaces. Introduced some
+     extra instructions such as MUL, DIV, ASH, ASHC, SPL. The 11/45,
+     /50 and /55 had the same CPU - the differences being in memory
+     types, bus layouts, etc.  The 11/70 was to have essentially the
+     same cpu, with modifications to allow for Cache, 22-bit
+     addressing and, for the first time, non-Unibus memory.
+
+     The PDP-11/45/50/55 had two Unibuses, normally joined by a single
+     spaced jumper. The second Unibus has no arbitration, and was part
+     of dual-ported fastbus memory. If you had fastbus memory (which
+     made a 45 a 50 or 55), a second processor could access the
+     memory. The only problem was that with the Unibus A and B split,
+     DMA devices on Unibus A could not see the fastbus memory.  I [not
+     MMcC] had a PDP11/50 and PDP11/20 set up in such a fashion, with
+     the PDP11/20 doing high speed A/D sampling and signal averaging
+     using shared memory with the PDP11/50.
+
+     The fastbus memory is an independent high speed data bus internal
+     to the 11/45 xx processors, with up to two solid state memory
+     controllers and had each controller had two ports one for the CPU
+     and the other available for a second Unibus where concievably a
+     high speed DMA device could directly write to the memory. The DMA
+     device on the `second' bus had to have a Unibus priority
+     arbitration system, so you could in fact connect another CPU to
+     it a bit like the DTS07's in concept.  Note that, just to confuse
+     the issue, this is not the same as the product/feature later
+     marketed as FASTBUS.
+
+     KB-11 was the original /45 cpu, and used the FP-11 asynchronous
+     FPP. Later machines under the /45 label were core memory /55s.
+
+- Jan 1973
+     11/40, 11/35. Price same as 11/20, higher performance. (See
+     tables and chart below for relative performance of the various
+     PDP-11 processors) Small- and Medium-Scale Integration.
+     Architecture of CPU like 11/45 without the raw power. Memory
+     Management Unit, EIS/FIS Extended and Floating instruction sets
+     as options.  Introduced with Core memory, and later with MOS.
+     Microcoded. Max Memory 256 KB. Extra instructions such as SOB XOR
+     MARK SXT and RTT introduced. MUL, DIV etc implemented in the EIS
+     option.
+
+- Jun 1972
+     11/05, 11/10. Performance same as 11/20, lower price.
+     Microcoded.  2-board processor. New 8 KW 3-board core memories
+     were introduced with the /05 and /40. Later on, 16 KW memories
+     were used before core got supplanted my MOS Memory. I remember
+     these memories spec'd for a 980ns read/write cycle. I also
+     remember the 11/05 CPU boards having the most green ECO wires I
+     had ever seen on a machine. The cost of adding those wires
+     manually must have, on reflection, added significantly to the
+     cost of manufacture of the 11/05. Later board revisions
+     eliminated these almost completely.  It is interesting to
+     consider that modern design, simulation and testing tools has
+     virtually eliminated the ECO wire practice - a practice that we
+     took for granted during the '70s and early '80s.
+
+     The /05 front panel has the following control switches:
+
+            LOAD ADRS   EXAM    CONT   ENABLE/  START  DEP
+                                       HALT
+
+     When HALTed, the CONTinue key performed a single instruction per
+     key depression (as do all the other 11's with front panels.)
+
+     There is a single 16 bit ADDR/DATA multiplexed display and a
+     single RUN status light.  The power switch has the following
+     positions : OFF / POWER / PANEL LOCK.
+
+- Mar 1975
+     11/70. CPU very similar to 11/45 in raw performance. Machine
+     introduced with had core initially and MOS later. These machines
+     introduced Cache, 22-bit Memory management of up to 4
+     MB. Optional Floating point processors. Massbus periperal
+     controllers which had a direct path to memory first appeared on
+     this machine. Note that MASSBUS (RH70's) adapters attached
+     directly to memory were unique to the 11/70 -- MBAs only
+     otherwise appeared on different series (PDP-10, VAX etc).  Unibus
+     systems could use MASSBUS peripherals, but the controllers
+     (RH11's) spoke over the Unibus and lost most of the speed
+     advantage. While this machine was not the fastest -11 (that title
+     belongs to the bipolar memory equipped 11/55), no other -11 could
+     approach the 11/70 in terms of I/O throughput over its multiple
+     massbus/memory bus architecture.
+
+     The KB-11B was the original 70 cpu. Similar to the KB11 based
+     11/45, plus unbus map, 22-bit, MBCs etc.  The 11/70 had the
+     `feature' of the slowest bus of ANY -11. And when a UNIBUS
+     peripheral did DMA, EVERYTHING stopped! This is one of
+     the reasons the Seti upgrades are so good. They enable the RHs,
+     CPU, and UNIBUS to all operate in parellel.
+ 
+     KB-11C: The FP-11 proved `featureful' in practice, and was
+     replaced with a faster synchronous FP-11C. This required the
+     `FP-11C compatible KB-11.'
+
+     The 11/70 was a 18 month overnight wonder to fill the gap left by
+     the late development of the 32-bit wonder box! :-) 
+
+     The C/D cpus used the FP-11C FPP. In fact, the KB-11C is referred
+     to as the `FP-11C compatible KB-11' in some manuals. 
+
+     - Relative CPU performance: 0.60  (VAX780 = 1.0)
+     - Technology:               SSI/MSI TTL
+     - I/O Bus Capacity:         4 MASSBUS ports
+     - Space Requirements:       9.0 square feet (2 H960)
+     - Power Requirements:       6,000W
+
+- 1975 (ish)
+     LSI-11, first of the microprocessor -11s, implemented on 4
+     chips. Used the T(iny)-11 chipset from Western Digital First of
+     the Q-bus machines (All others above were UNIBUS).  Implemented
+     on a single quad height board. Performance approximately equalled
+     that of the 11/05. Minimal size. Aimed at OEM imbedded
+     controllers etc.
+
+- Jun 1976
+     11/55 had special high speed (300 ns) bipolar mem. Floating point
+     as option. Kernel, Supervisor and User CPU operating modes.
+     Otherwise identical to 11/45. Interestingly, a table in
+     Bell/Mudge/McNamara's Computer Engineering (page 406) shows the
+     11/55 performance relative to the 11/03 for basic instructions
+     per second as 41 (vs 36 for the /70) and Whetstones of 725 (vs
+     671 for the /70). Obviously the 300 ns bipolar memory made a
+     difference in raw performance. Of course this system could not
+     approach the /70 in throughput.
+
+     KB-11D The 18 bit version of the C. used in /55s and very late
+     /45s.  I think all /50s were KB-11 cpu's. (PaulR)
+
+     The big difference between a /50 and a /55 is the /55 is a KB-11D,
+     not a KB-11 cpu:
+
+     - KB-11:   11/45, 11/50
+     - KB-11B:  11/70
+     - KB-11C:  11/70
+     - KB-11D:  11/55
+     - KB-11Cm: 11/74*
+     - KB-11E:  11/74* that never shipped.
+
+     * See the Never 11's section.
+
+- 1976 (ish)
+     LSI-11/2 (11/21?) KD11-HA. Double height module follow-on to
+     LSI-11.  Performance of an 11/05, but priced much less.  Qbus.
+     Lacks onboard memory and WCS chip socket.  Basically the same
+     chipset.  Both used in PDP-11/03 systems.  LSI-11 sucks more
+     power than the LSI-11/2.
+
+     The LSI-11/2 chipset was not the T-11, but simply "the LSI-11
+     chipset," manufactured by WDC for DEC. The T-11 is a similar
+     architecture on a single 40-pin DIP that was used only in the
+     Falcon SBC-11/21 and a few controllers (e.g. RQDX3, DEUNA).
+     FIS/EIS upgrade microms (MICrocode ROMS) were available for the
+     LSI-11, and at least on the PDT-11s there was a special 2-in-1
+     version of the regular CPU microms that would free up a socket
+     for the FIS/EIS microm.
+
+     The T-11 was also used in the KXT11-CA Quad width `communications
+     processors' that allowed you to have multiple CPU's on the Qbus
+     per se.
+
+- Jun 1975
+     11/03 Same microprocessor as 11/2. Performance the same as the
+     11/05, but priced much less.  Qbus. More expandable than
+     LSI-11/2. Aimed at low end of 11/05 market.
+
+- Sep 1975
+     11/04 Same microprocessor as 11/2, 11/03. Follow-on to 11/05.
+     Performance of an 11/05, priced much less.  UNIBUS.
+
+- Mar 1976
+     11/34. Follow-on to 11/40 with same performance at lower
+     cost. Two board cpu in SSI/MSI TTL. Initially had a two-switch
+     KY11-LA front panel (Halt&Boot).  Optional calculator-style Octal
+     KY11-LB front panel later, although most customers opted to have
+     this as time progressed. The KY11-LB could be used to singlestep
+     or microstep a program for diagnostic use. The /34 style memory
+     managment was 18 bit and the memory management was standard.
+
+- Jun 1977
+     11/60. Intended follow-on to 11/40 at the high end/same
+     price. Higher performance. Writable control store for custom
+     instructions. Too costly, too late.  Memory management was 18 bit
+     and standard. Floating point instructions were standard - but
+     implemented by the CPU microcode. There was a floating point
+     coprocessor option. The 60 was to have been a 22 bitter
+     originally.
+
+- Mar 1978
+     11/34a, 11/34c.  The /34a with the "right cache" presented a
+     higher level of performance than the then "hot machine" of the
+     time - I believe it was the /60 - in the eyes of -11 engineering /
+     central engineering.  The "c" upgrade was the re-establishment
+     of the original cache.  Thus, the /34c was an internal mythical
+     model to allow FS to keep track of what systems had the upgrade -
+     much like the /35 vs /40 clock mod that made the /35 faster.
+
+- 1978?
+     PDT family. PDT 11/110, 11/130, 11/150. 
+     The PDT-11/110 and -11/130 were built into the cardcage of a
+     VT100 (along with the terminal).  The 11/110 simply had code to
+     allow down-loading of the PDP-11. It had no peripherals. The
+     11/130 had two TU58's mounted just under the monitor. The
+     PDT-11/150 was built into a table-top unit which also had two
+     RX01 equivalent drives, and the cpu board was built into the the
+     Floppy box.  The PDT-150 had separate VT100 and systems box. The
+     system box for the single disk unit: 51.0 cm (20.08 in) length X
+     33.02 cm (13.0) width X 20.9 cm (8.23 in) height and 33 pounds.
+     Dual disk unit: same, but 34.8 cm (13.42 in) height and 46
+     pounds.  The box slopes to the front and has a small front panel
+     that reads `digital PDT-11' and has four LEDs ("1", "2", "RUN",
+     "POWER"). LED 1 Lights to indicate a system error when in the
+     self-test mode.  LED 2 lights to indicate that the system is
+     waiting for an autobaud response from the console terminal.
+     Otherwise both can be controlled by a user program. The top of
+     the case is plastic and is held fast by two screws; undoing these
+     allows access to the CPU and logic. Two RX01 drives (8.5"
+     floppies) are mounted in the bottom 75% of the cabinet.  There
+     are three terminal ports, one console port, one printer port, and
+     one modem port. The 3 terminal ports are optional.  All of the
+     connectors, save for the modem port, are female DB25 connectors,
+     which I have been told is rare. Depending upon the version of
+     RT-11 being used, the machine expects either VT52 or VT100
+     console/terminal input -- I believe that versions prior to 4.0
+     default to VT52. The stock memory appears to be about 30K words
+     (not including the I/O page).  It is also noteworthy that the
+     RX01 firmware is suspected of not being strictly "real" RX01.
+     The PDT will write fresh single-density formatting every time it
+     writes to the disk.  It's also interesting to note that the
+     physical device name for the drives is PD: instead of DX: The
+     documentation calls the drive controller an RXT-11.  It also
+     claims that a PDP11/V03 with RXV11 is compatible with the
+     PDT11/150.  The print set shows 27 sectors/track for the PDT.
+     The RX02 User's Guide shows 26 sec./trk.
+
+     All three PDT's had the equivalent of an 11/2 (same chip set, in
+     fact) and 60 KB addressable (rather than 56 KB, since it had only a
+     4 KB I/O page) These machines, running RT11, could be viewed as
+     being the forerunners of today's PCs. They were never marketed as
+     such, and thus faded into obscurity.  Although there is no I/O bus,
+     per se, the print set gives the controller card equivalent for the
+     on-board circuits:
+
+     - Console Terminal:       DLV11-A
+     - Asynchronous Comm Port: DLV11-E
+     - Printer:                LAV11
+     - Cluster Controller:     DLV11-A
+     - Floppy Disk Port:       RXT-11/RX01
+     - Line Time Clock:        KW11-L
+     - Synchronous Comm:       DUV11
+
+     A useful table from the PDT-11/150 User Guide:
+
+               PDT-11/15x-yz
+
+          x is     console terminal:
+
+          0        NONE
+          1        VT100-AA, VT100-AB
+          2        LA120-AA, LA120-BA, LA120-DA
+          3        LA34-DA, LA34-HA
+          4        LS210-HE, LS210-HJ
+          5        LA36-HE, LA36-HJ
+
+- 1980 (ish)
+     11/44. Successful follow-on to 11/40 high end/11/70 low end.
+     Almost 11/70 power at 11/40 price. UNIBUS. Also, it could have
+     the CIS option.
+
+     - Relative CPU performance: 0.42  (VAX780 = 1.0)
+     - Technology:               SCHOTTKY TTL MSI
+     - Maximum memory:           4 MB ECC MOS
+     - Maximum I/O throughput:   5 MB/s UNIBUS
+     - Cache size:               8 KB
+     - Cache Cycle time:         275 ns
+     - Space requirements:       4.4 square feet (H9642)
+     - Space requirements:       6.3 square feet (H9645)
+     - Power requirements:       1,224W
+
+- 1979
+     11/23. Successful follow-on to 11/03. Single F(onz)-11 chip.
+     11/34-ish performance at lower cost. Qbus.  F11 chip does 22 bit
+     addressing, but only 18 address lines brought out in earliest
+     versions; all 22 brought out on later revs of the KDF11-A.
+
+- 1980 (ish)
+     11/24. successful follow-on to 11/04, 11/34. F-11 chip. Price of
+     11/04, performance of 11/34.  The 11/23 and /24 had the 11/34
+     style memory management.  They both had 22 bit addressing, but
+     for the /24, the UNIBUS map (to map 18-bit UNIBUS DMA addresses
+     onto the 22 bit memory address) was a (rather rare) option
+     called, I believe, a KT24.
+
+- 1984(ish)
+     PRO-350, PRO-325. This machine was released as one of a
+     triumvirate of PCs by DEC. The PCs consisted of the DECmate-II
+     PDP-8/WPS based dedicated word processor; the 8080/8086 based
+     Rainbow, and the F-11 based PRO-325/350. Although the machines
+     were well engineered, they were not successful in the marketplace
+     for a number of reasons.  First, the customer base was confused
+     by being offered three totally separate, incompatible
+     offerings. Second, the Rainbow, although able to run both CP/M
+     and MS/DOS, was incompatible in both hardware and software with
+     the IBM PC that was establishing the defacto standards for the
+     industry. And third, the PRO-350 was based on a bounded,
+     restricted version of RSX11, and was viewed as an oddity in the
+     marketplace.
+
+     The PRO-325 was the same as a PRO-350, but it only had the RX50's
+     in it; the PRO-350 also had an RD-series hard drive (originally
+     an RD50, but with newer controllers you could have up to an
+     RD52).  The PRO-380 was the same as the PRO-350 with respect to
+     devices.  All three had a bitmap display.  The PRO-325/350 was
+     based on the F-11 (11/23) chip set.  The PRO-380 was based on the
+     J-11 (11/73) chip.  They all were desktop units, though an option
+     allowed them to be mounted in a tower configuration.
+
+- 1986(ish?)
+     PRO-380. This was an upgrade to the PRO-350, using the J-11
+     chipset. The market opportunity was closed to it at this time,
+     and they only had limited success. The PRO-350/380 probably saw
+     most use as console devices/frontends for a number of the VAX8000
+     series machines.
+
+In the following sections, quotes marked [-PSH] are extracts from the
+1987 "PDP-11 Systems Handbook"
+
+- 198x
+     11/73, Follow-on to 11/23, 11/24. J(aws)-11 chip. Similar cost,
+     higher performance.  Replacement for 11/44.
+
+         The MicroPDP-11/73 computer provides one-third more compute
+         power than the MicroPDP-11/53, ... 15-megahertz J-11 chip ...
+         Memory is expandable in 1- and 2-Mbyte increments ....
+         [-PSH]
+
+     11/73 is the KDJ11-A or KDJ11-B.  (The -B just puts things like
+     the console SLU and boot roms onto one board; some revs also have
+     PMI memory ...  the boundary between the 11/73 and 11/83 is a bit
+     fuzzy...).  There was never a UNIBUS equivalent of the /73.  The
+     /73 didn't replace either the /44 or the /70.  (Nothing
+     replaced the 11/70!  Nothing else had the I/O throughput, and the
+     CPU was only just outrun by the 11/83 / 11/84.)
+
+- 1987(?)
+     11/53. Essentially a stripped down /73.  KDJ11-D I think -- J11
+     chip, 15MHz, lacked cache or FPA options, has (slowish) onboard
+     memory.  There wasn't a /54.
+
+         The heart of the MicroPDP-11/53 is a 15-megahertz, J-11
+         single board computer with 0.5 Mbytes of onboard memory ...
+         The MicroPDP-11/53 PLUS supermicrosystem ...  has an
+         additional 1 Mbyte of memory for a total of 1.5 Mbytes of
+         onboard memory.  [-PSH]
+
+- 198x
+     11/83, 11/84  Higher performance versions of 11/73.
+
+         The computing power of the MicroPDP-11/83 has twice the
+         performance of the MicroPDP-11/73 .... The MicroPDP-11/83, by
+         combining an 18-megahertz J-11 chip and a companion
+         floating-point accelerator chip with a new private memory
+         interconnect on one module, ....  [-PSH].
+
+     The MicroPDP-11's (11/23+, /73 and /83) were in a tower
+     configuration which could be configured for desktop use, or the
+     innards removed and rack-mounted.  (The differences between the
+     /73 and the /83 were simply:
+
+         - The board clock speed, 15 MHz vs 18 MHz
+         - the type of memory.  The 11/83 had PMI memory which was
+           configured before it on the Qbus.)
+
+     The 11/8x can't go much above 18 MHz. While the original design
+     called for 20 MHz, neither the J11's nor the gate arrays were up
+     to it. They use Private Memory Interconnect (PMI) much like the
+     11/70 did years earlier. The memory (for the /83) lives in the
+     usual PMI slots, and then a bus adapter brings the bus out to the
+     UNIBUS.  DEC realized that they had a lot of customers with
+     UNIBUS peripherals, but they didn't want to build another UNIBUS
+     processor (the previous one being the 11/24), so they expanded on
+     the 11/24 + KT-24 concept and came up with the 11/84.
+     Considering that at that time, all DEC had on the Qbus was the
+     RD-series and the KDA50 which started out as a real power pig,
+     UNIBUS was the way to go if you wanted a system with big (but
+     genuine DEC) disks and high-end tapes.
+
+     - Relative CPU performance: 0.72  (VAX780 = 1.0)
+     - Technology:               J-11 18 MHz Chipset MSI/LSI
+     - Maximum memory:           4 MB PMI ECC MOS
+     - Bus Capacity:             5 MB/s UNIBUS
+     - FPA standard, FPP standard
+     - Cache:                    8 KB
+     - Space Requirements:       6.2 square feet (H9642)
+     - Power Requirements:       1,100W
+     
+- 1990
+     11/93, 11/94 Possibly the last PDP, they're just the 83/84 CPU
+     board with a higher clock speed.  The 11/93 and /94 are a new
+     design which uses the J11 CPU. Instead of cache, the entire main
+     memory (2 or 4 MB) is on-board w/ 70 ns parts. A new memory
+     controller gate array lets the CPU at the memory during NPR
+     transfers (even during block mode). A Z80 CPU controls 8 emulated
+     DL ports (this subsystem is called a DLV22) with buffering, etc.
+     The board uses the same 18 MHz DCJ11-AE as the 11/8x - all the
+     speed improvements are from a more modern board design. The 11/9x
+     will go above 18 MHz.
+
+     DEC marketing material:
+     
+     Product Description
+     
+     The PDP-11/94 is the newest and most powerful member of the
+     PDP-11 family of multiuser systems.  The PDP-11/94 features a
+     new, performance-enhanced processor that combines the DCJ11/FPJ11
+     chip sets with 2 Mbyte or 4 Mbyte of high-speed onboard memory,
+     eight buffered, programmable asynchronous serial lines and a time
+     of year clock.  The single-board implementation of the processor
+     effectively complements the configuration flexibility and
+     expansion capacity of enhanced UNIBUS systems packaging.
+     
+     FEATURES 
+    
+     - A new performance-enhanced single-board CPU features Digital's
+       C-MOS 18 MHz J-11 chipset, FPJ-11 coprocessor, parity memory, and
+       eight buffered serial lines
+     - The full PDP-11 instruction set including floating-point and EIS
+       instructions, plus an integral floating-point coprocessor
+     - Sophisticated 22-bit memory management, dual register set,
+       separate instruction and data space, and three system modes:
+       kernel, supervisor, and user
+     - 2 or 4 Mbyte of onboard high-density parity memory 
+     - Private Memory Interconnect (PMI) architecture for high-speed
+       data transfers and enhanced system performance
+     - 64 Kbyte bootstrap/diagnostic ROM facility and 8-Kbyte EEPROM
+       (100% diagnostic coverage)
+     - Program-controlled line-frequency clock 
+     - Eight-line buffered programmable EIA/CCITT serial-line
+       asynchronous interface
+     - ASCII console logic for system control and debugging 
+     - Time of year clock 
+     - Full battery backup support available 
+     - Concurrent processing that allows the simultaneous execution of
+       instructions and DMA transfers
+     - New compact design that requires less power and offers more
+       expansion capacity and configuration flexibility
+     - Consistent UNIBUS systems packaging: standard 10.5 inch by 19
+       inch rackmount design center, H9642- and H9645-based systems
+       cabinets
+     - Board-Level upgrade packages for installed PDP-11/84s 
+
+========================================================
+
+Differences between the 11/70 and the 11/83, 11/93
+
+Here's an excerpt from an old Micronote (#039) (Thanks Richard Wallace)
+
+      +---------------+                                    +-----------------+
+      | d i g i t a l |                                    |  uNOTE # 039    |
+      +---------------+                                    +-----------------+
+      +----------------------------------------------------+-----------------+
+      | Title:  Differences between KDJ11-A and KDJ11-B    | Date: 8-Aug-85  |
+      +----------------------------------------------------+-----------------+
+      | Originator:  Peter Kent                            | Page 1 of 5     |
+      +----------------------------------------------------+-----------------+
+                                      Purpose
+
+      The purpose of this MicroNote is to identify and discuss the differences
+      between the KDJ11-A and KDJ11-B CPU modules.
+
+      [ Stuff Deleted ]
+Cache
+
+For a full discussion of cache memory as used on the KJD11-A and
+KDJ11-B refer to MicroNote #9 and the KDJ11-A and KDJ11-B User's
+Guides. Both CPU modules have a similar cache organization using a
+nine bit tag. This nine bit field contains information that is
+compared to the address label, which is part of the physical address.
+When the physical address is generated, the address label is compared
+to the tag field. If there is a match it can be considered a hit
+provided that there is entry validation and no parity errors.  The
+KDJ11-B has an additional tag store called the DMA tag. The DMA tag is
+an identical copy of the cache tag store and is used to monitor the
+main memory DMA updates while the cache tag store monitors the DCJ11
+requirements. The presence of the second tag store - DMA tag - allows
+the J-11 microprocessor to continue processing after it has
+relinquished the system bus to a DMA device. When the DMA tag detects
+a hit (main memory location written to by the DMA device), the
+microprocessor stops and relinquishes the internal bus to the cache
+controller to allow it to monitor further DMA activity on the bus. The
+KDJ11-A, however, has only one tag store and stops processing as soon
+as it relinquishes the system bus to a DMA device.
+
+The PDP-11 processors have also found themselves in other roles:
+
+     - Most PDP-10/DECsystem-10 and DECsystem-20 frontend processors and
+       communications processors were PDP-11/20s and /40s.
+     - VAX-11/780 front end processor/console was an 11/03.
+     - Many of the VAX 8000-series machines had PDP-11 based PRO-350/380
+       frontends.
+     - LAT was originally implemented on PDP-11s as comms processors.
+     - DECSA Ethernet Terminal Server had a PDP-11 as a heart.
+     - All the HSCxxx Storage controllers use PDP-11 processors.
+     - DEUNA Ethernet Controller.
+
+...and elsewhere.
+
+========================================================
+
+Other fun PDP11's
+     The 11/10S. This was a 11/10 CPU (basic instruction set, no
+     memory management; a low-end PDP11), with the interesting feature
+     that you could disable the bus arbitor, and it became a DMA
+     peripheral to another PDP11.  In other words, a parallel
+     processor. I have never seen this documented, but the boards were
+     common enough as simple 11/10 processors.
+
+========================================================
+
+The Never 11's
+
+There are a number of very significant projects that never came to
+market as originally envisioned, although the lessons learned
+sometimes got applied to later offerings.
+
+- Hydra
+     Was to have used the KB-11Cm CPU modified to interlock the ASRB
+     instruction in memory, allow cache bypassing on a per page basis,
+     and tweaked powerfail/re-start for the 11/74. These were shipped
+     with MKA-11 memory boxes as the 11/70mu system, all to AT&T, I
+     believe. The only multiprocessing systems were Castor/Pollux in
+     the RSX development group in ZK (Software Engineering at
+     Spitbrook Road, Nashua NH), and the RSX DECnet group in Tewksbury
+     MA.  Ontario Hydro also had one for field test and invented "just
+     say no" when the field test ended. :-) BTW, HRC, the reconfiguration
+     task, is short for "Hercules", who tamed Cerberus (the MP version of
+     TRAX/M-PLUS).
+
+- 11/74
+     Probably the most famous PDP-11 that never was. Designed
+     as a 4-way multiprocessor with four 11/70 processors clustered
+     around shared memory. Configuration was SMP. Furthermore, the
+     processors, which had been originally designed as FORTRAN crunchers,
+     were to be equipped with the Commercial Instruction Set (CIS) for
+     Cobol applications. Prototypes were built and a number of alpha
+     units installed, but the product never came to market. Reasons for
+     it never being shipped are various and may be apocryphal: the
+     backplane would have been so complex to be almost unmanufacturable;
+     the cost due to the complex backplane would have been too high; the
+     11/74 with CIS would have blown the new VAX-11/780 out of the water
+     in commercial applications.  Those that truly know are not talking :-)
+
+     The backplanes are almost standard KB-11C. The microcode is changed to
+     interlock the ASRB instruction, cache bypassing is added and a few
+     other minor changes. No problem to manufacture.
+
+     The memory is the MKA-11, with 4 memory ports. That's 32 flat gray
+     cables in and out of each box except the last, plus 4 box controller
+     cables and battery backup.
+
+     The CIS equipped unit was the KB-11E cpu, aka 11/110. Another
+     contempory of these was the 11/68. (see Bluefin)
+
+     There's also the IIST, the DIP-11, and so on, for which no useful
+     information has been found to include in this FAQ.
+
+- KB-11E
+     This was to have been the `real' /74. A KB-11Cm, cleaned up, and
+     with CIS included. Canned just as it was to go into production.
+     The maintenance prints for the CIS were in the hardware
+     catalogue, as were the MKA-11 manuals. The KB-11Cm tech manual is
+     listed as EK-KB11CM-TM, yep 2-6-2 not 2-5-2, in at least 2
+     places (see the Part Number Format section).
+
+- Bluefin, aka 11/68
+     The /60 was to have been a 22 bitter originally. The 11/68 was to
+     have had up to 16 cpus, each as powerful as a 4-cpu /74. Canned
+     to prevent competition with a future 32 bit product.
+
+- ECL-11
+     18 bit system done at CMU.
+
+- 11/110 and 11/120
+     The MKA-11 manuals refer to these. Perhaps they were going to be
+     what became the 11/780 VAX?
+
+========================================================
+
+Non-DEC 11's
+     The PDP-11, as the PDP-8 before it, was cloned and copied
+     extensively behind the so-called Iron Curtain.  A number of
+     plants produced PDP-11 compatible systems in the Soviet Union,
+     including Elektronika-79 (11/70) and several machines without
+     direct DEC analogues (DWK-4 with proprietary video controller).
+
+     I've never seen CIS realised on any Soviet-built clone.
+     Elektronika-85 (Professional-350) was the most popular Soviet PC
+     (of very low quality, though).
+
+========================================================
+Part Number Format
+
+Every DEC component part has a 2-5-2 number. Sometimes it also has
+another designator, like an M-series module number*. In the 2-5-2
+numbering system the first 2 digits denote the part class (for
+example, 23 - ROMS/PROMS/EPROMS, 29 - vendor parts), the middle 5
+digits denote the unique part, and the last 2 digits denote a
+particular variation. Note that not all 2-5-2 part "numbers" are
+numeric - things like manuals are EK-series (EK was originally
+"Education Services- hardcopy").
+
+*Note: technically, M-series parts are 00-Mnnnn-00, where the 0's
+don't display. An RQDX1, M8639-YA, is 00-M8639-YA, but it also has
+other 2-5-2 part numbers (there should be a 54-series etched PCB
+number, for example)
+
+Explanation provided by Terry Kennedy.
+
+========================================================
+
+PDP-11 Relative Performance
+From a chart in the 1978 "Computer Engineering"
+
+        11/03 11/04 11/05 11/20 11/34 11/34c 11/40 11/60 11/45 11/55 11/70
+        ----- ----- ----- ----- ----- -----  ----- ----- ----- ----- -----
+Perf(1)   1     2.8   2.5   3.1   3.5   7.3    3.6   27          41   36
+ core                                                      13
+ mos                                                       23
+ Bipolar                                                   41
+Whets     26     18    13    20   204   262     57   592        725   671
+ core                                                     260
+ mos                                                      335
+ Bipolar                                                  362
+
+(1) performance is for the basic instruction set relative to the 11/03
+
+From a chart in the 1987 "PDP-11 Systems Handbook"
+
+                                   11/23 11/53 11/73 11/83 11/93
+                                   ----- ----- ----- ----- -----
+               CPU                 F-11  J-11  J-11  J-11  J-11
+               Microcycle(ns)      300   267   267   222    222
+               Clock (MHz)         ?     15    15    18     18
+               Performance         0.2   0.5   0.7   1.2    ?
+               (11/70 = 1)	 
+               Cache               no    no    yes   yes    no
+               Floating-Pt         opt   no    no    yes    yes
+               Coprocessor
+
+NOTE: The 11/93's memory was effectively all cache, so there was
+no need for a separate cache subsystem.
+
+And by merging the data from both charts, sorting by model number:
+
+P   r  45                                           _
+e   e  40                         -     -
+r   l  35                         |           -
+f   a  30                         |        _
+o   t  25                         |              -
+e   i  20                         |  -
+m   v  15                         _
+a   e  10 
+n       9 
+c   t   8 
+e   o   7             -     -
+        6 
+f   1   5 
+a   1   4                _     _
+c   /   3    -  _  -
+t   0   2 
+o   3   1 -
+r       0_________________M_o_d_e_l_s________________
+          0  0  0  2  2  3  3  4  4  5  5  6  7  7  8
+          3  4  5  0  3  4  4  0  5  3  5  0  0  3  3
+                            c
+
+Sorting by introduction date gives:
+
+P   r  45                                           _
+e   e  40    -           -
+r   l  35    |        -
+f   a  30    |                       _
+o   t  25    |                                -
+e   i  20    |                                   -
+m   v  15    _
+a   e  10
+n       9
+c   t   8
+e   o   7                               -  -
+        6
+f   1   5
+a   1   4       _                 _
+c   /   3 -        _           -
+t   0   2
+o   3   1                   -
+r       0_________________M_o_d_e_l_s________________
+          2  4  4  0  7  5  0  0  3  6  3  2  7  5  8
+          0  5  0  5  0  5  3  4  4  0  4  3  3  3  3
+                                        c
+
+[I was tempted to label the vertical index of the chart in PUPs (PDP-11
+Units of Performance), but resisted the temptation.   :-)  -MMcC]
+
+[It being the end of the year and all at the moment (12/96), temptation
+is being easy to give in to.  The next rev isn't far away... -Dworkin]
+
+Also, from the table of UNIBUS-PDP-11s performances the micro-cycle
+timings for the machines listed there :
+
+                  11/03 11/04 11/05 11/34 11/40 11/45 11/60
+          u-cycle  400   260   300   180/  140/  150   170
+           (ns)                      340   200/
+                                           300
+
+     Generally, earlier model PDP-11s with odd numbers are OEM
+     machines and even-numbered ones are end-user machines. [11/15,
+     11/35, 11/05, (but not 11/45 or 11/55) vs. 11/20, 11/40, 11/10,
+     11/34, 11/44, 11/70].  This carried on in a variation to the
+     later model numbers where the odd numbers became Q-Bus machines
+     aimed at OEMs and the even-numbered were UNIBUS machines were
+     intended for end-users.  Thus the Qbus 11/03, /23, /53, /73, and
+     /93 are aimed at OEMs and the UNIBUS 11/04, /24, /54, /7?, and /94
+     are aimed at the end-user market.
+
+     Most of the PDP-11 line bore the standard cyan (maroon) and
+     magenta (purple) colors.  The /55 and some of the integrated
+     systems were blue and green, as were the DEC-10 FEP 40's and some
+     later front-panel-less /70's.  The 11/60 came in the low boy
+     (VAX) style.  The 11/34 and the later UNIBUS (/24, /44) came in
+     the white single fronts.
+
+========================================================
+
+What operating systems were written for the PDP-11?
+
+     DOS/BATCH
+     RSTS, RSTS/E
+         Resource Sharing/Time Sharing. General purpose Time sharing system.
+     CAPS-11
+         Cassette Based Programme development System.
+     MUMPS-11
+         Massachusetts General Hospital Multi-User Multi-Processing
+         System.  A language, an operating system and a DBMS all in one.
+     RT11
+         Real Time. Foreground/Background or Single Job operating system. 
+     TSX11
+         Multiuser enhancements to RT11 (third-party).
+     RSX11
+         Resource Sharing eXecutive. Multiprogramming system.
+     RSX11/M
+         Small to moderate-sized real-time multiprogramming system.
+     RSX11/M+
+         Extended RSX-11/M.
+     RSX11/S
+         Execute-only real-time multiprogramming system.
+     RSX11/D
+         Large real-time multiprogramming system.
+     RSX-11B/C, Micro/RSX
+     IAS
+         Interactive Application System. Multi-purpose multiprogramming system.
+     TRAX
+         Transaction Processing system.
+     Unix (tm)
+         Much/most of Unix was developed on PDP-11s.
+     MERTS (MERTSS?)
+         A virtual operating system that could run Unix as
+         a process.  Several machines at BTL ran MERTS.
+     CTS-300
+         There's some confusion as to whether this is just a re-packaged
+         version of RT-11, or a time-sharing system layered on top of RT-11.
+     CTS-500
+         There's some confusion as to whether this is just a re-packaged
+         version of RSTS, or a time-sharing system layered on top of RSTS.
+     TSX
+         Time-sharing system layered on top of RT-11.
+     HT-11
+         Heathkit's hacked version of RT-11, wouldn't run on a "real" PDP-11.
+     Ultrix
+         Digital's implementation/port of BSD UNIX.
+     Venix
+         A third-party implementation/port of UNIX.
+ 
+
+========================================================
+
+What programming languages are supported on the PDP-11?
+
+     - Assembler
+     - Macro
+     - MUMPS
+     - BASIC, BASIC-plus2
+     - Cobol
+     - Fortran IV, Fortran IV+, Fortran 77
+     - Focal
+     - C
+     - Bliss-11 (or BLISS-16?)
+     - LIL (?)
+     - DIBOL 
+     - Pascal 
+     - Micropower Pascal
+     - Modula-2 
+     - LisP
+     - Prolog
+
+========================================================
+
+Memory address convention (for this FAQ), and the GPRs
+     There is a certain amount of confusion about memory addressing
+     representation due to the fact that the PDP-11 was originally
+     launched with 16-bit addressing, but was extended through 18-bit
+     to 22-bit over time.
+
+     On the 11/20, the processor status word (PSW), the topmost
+     addressable location, would have address 177776, while on the
+     11/40 the address would be 777776, and on the 11/70, 17777776. Of
+     course the hardware also helped in bit extending for you if you
+     toggled in 177776 in an 11/70....
+
+     For the purposes of this FAQ I propose to take the middle ground
+     and refer to addresses as if we were talking about an 11/40. Make
+     your mental adjustments as appropriate.
+
+     There is one further area of confusion. Addresses are byte
+     aligned, with an even address referring to a word (unless this is
+     a byte operation in which case the lower byte of the word is the
+     target) and an odd address specifying the upper byte of the
+     word. In English, memory locations are incremented up in steps of
+     2.
+
+     There is, of course, an exception. The General Purpose Registers
+     (GPRs) had addresses that incremented in steps of 1. R0 is 777700,
+     R1 is 777701 .. R6(Kernel) is 777706, R7(Kernel) is 777707. Later
+     models had a second set of GPRs at 777710 through 777717. The
+     complication does not stop here, though. The Kernel Stack pointer
+     (SP) is at 777706, the supervisor SP at 777716 and the User SP is
+     at 777717.
+
+========================================================
+
+What is the PDP-11 instruction set?
+     The instruction set of the PDP-11 was designed towards a clean,
+     general, symmetric instruction set.  It can be used as a
+     register-based, stack-based, or memory-based machine, depending
+     on the programmer's preferences.  Interrupt responsiveness is
+     also important, supported with multiple interrupt levels for
+     real-time computing as well as allowing for a separate interrupt
+     handler for each device that generates interrupts.
+
+     Word length is 16 bits with the leftmost, most significant bit
+     (MSB) being bit 15.  There are eight general registers of 16 bits
+     each.  Register 7 is the program counter (PC) and, by convention,
+     Register 6 is the stack pointer (SP).  There is also a Processor
+     Status Register/Word (PSW) which indicates the 4 condition code
+     bits (N, Z, V, C), the Trace Trap bit, processor interrupt
+     priority, and 4 bits for current and previous operating modes.
+     Addressing on the -11 is linear from memory address 0 through
+     177777.  Memory management allows access to physical memory with
+     addresses of up to 22 bits (17777777).  All I/O devices,
+     registers etc are addressed as if they were part of memory.
+     These live in the 4KW of reserved memory space at the top of the
+     addressing range.  Additionally, on most implementations of the
+     PDP-11 architecture, the processor's registers are memory-mapped
+     to the range 17777700-17777777 (there are many control registers
+     beyond just the general registers, the specifics vary between
+     implementations).  Thus Register 2 (R2) has an address of
+     17777702.  All word memory addresses are even.  In byte
+     operations, an even address specifies the least-significant byte
+     and an odd address specifies the most-significant byte.
+     Specifying an odd byte in a word operation will return an odd
+     address trap.  Memory addresses from 0 to 400 octal are reserved
+     for various exception traps such as timeouts, reserved
+     instructions, parity, etc., and device interrupts.
+
+     Addressing for the Single Operand, Double Operand and
+     Jump instructions is achieved via six bits:
+                          _ _ _ _ _ _
+                         |x|x|x|_|_|_|
+                         |Mode |Reg  |
+
+     where the modes are as follows: (Reg = Register, Def = Deferred)
+
+     Mode 0  Reg           Direct addressing of the register
+     Mode 1  Reg Def       Contents of Reg is the address
+     Mode 2  AutoIncr      Contents of Reg is the address, then Reg incremented
+     Mode 3  AutoIncrDef   Content of Reg is addr of addr, then Reg Incremented
+     Mode 4  AutoDecr      Reg is decremented then contents is address
+     Mode 5  AutoDecrDef   Reg is decremented then contents is addr of addr
+     Mode 6  Index         Contents of Reg + Following word is address
+     Mode 7  IndexDef      Contents of Reg + Following word is addr of addr
+
+     However, when Reg = 7 (PC):
+                          _ _ _ _ _ _
+                         |x|x|x|1|1|1|
+                         |Mode |  R7 |
+
+     Mode 2  Immediate     Operand follows the instruction
+     Mode 3  Absolute      Address of Operand follows the instruction
+     Mode 6  Relative      Instr address+4+Next word is Address
+     Mode 7  RelativeDef   Instr address+4+Next word is Address of address
+
+     Mainstream instructions are broken into Single operand and Double
+     operand instructions, which in turn can be word or byte instructions.
+
+Double Operand Instructions
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |b|i|i|i|s|s|s|s|s|s|d|d|d|d|d|d|
+                     | |     |     :     |     :     |
+                     | | Op  | Source    |  Dest     |
+
+     Bit 15, b, generally selects between word-sized (b=0) and
+     byte-sized (b=1) operands.  In the table below, the mnemonics and
+     names are given in the order b=0/b=1.
+
+     The double operand instructions are:
+
+          b 000 ssssss dddddd
+              Non-double-operand instructions.
+
+          b 001 ssssss dddddd -- MOV/MOVB  Move Word/Byte
+              Moves a value from source to destination.
+
+          b 010 ssssss dddddd -- CMP/CMPB  Compare Word/Byte
+              Compares values by subtracting the destination
+              from the source, setting the condition codes, and
+              then discarding the result of the subtraction.
+
+          b 011 ssssss dddddd -- BIT/BITB  Bit Test Word/Byte
+              Performs a bit-wise AND of the source and the
+              destination, sets the condition codes, and then
+              discards the result of the AND.
+
+          b 100 ssssss dddddd -- BIC/BICB  Bit Clear Word/Byte
+              For each bit set in the source, that bit is cleared
+              in the destination.  This is accomplished by taking the
+              ones-complement of the source and ANDing it with the
+              destination.  The result of the AND is stored in the
+              destination.
+
+          b 101 ssssss dddddd -- BIS/BISB  Bit Set Word/Byte
+              For each bit set in the source, that bit is set in
+              the destination.  This is accomplished by ORing the
+              source and destination, and storing the result in the
+              destination.
+
+          b 110 ssssss dddddd -- ADD/SUB   Add/Subtract Word
+              Adds the source and destination, storing the results
+              in the destination.
+
+              Subtracts the source from the destination, storing
+              the results in the destination.
+
+              Note that this is a special case for b=1, in that
+              it does not indicate that byte-wide operands are
+              used.
+
+          b 111 xxxxxx xxxxxx
+              Arithmetic functions not supported by all implementations
+              of the PDP-11 architecture.
+
+Single Operand Instructions
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |b|0|0|0|i|i|i|i|i|i|d|d|d|d|d|d|
+                     | |     |     :     |     :     |
+                     | |     |Instruction|  Dest     |
+
+     Bit 15, b, generally selects between word-sized (b=0) and
+     byte-sized (b=1) operands.  In the table below, the mnemonics and
+     names are given in the order b=0/b=1.  Unless otherwise stated,
+     the operand is read for the data to operate on, and the result is
+     then written over that data.
+
+     The single operand instructions are:
+
+          b 000 000 011 dddddd -- SWAB/BPL   Swap Bytes/Branch Plus
+              Swap bytes exchanges the two bytes found in the
+              destination, writing the result back to it.
+
+              The branch (b=1) is described in the section on
+              branches, below.
+
+              Note that SWAB is actually a bit pattern from the
+              range reserved for branches.  This particular
+              pattern is otherwise unused, as it would be a
+              modification of BR, Branch Always, which has no
+              obvious semantics.
+
+          b 000 101 000 dddddd -- CLR/CLRB   Clear Word/Byte
+              Sets all the bits in destination to zero.
+
+          b 000 101 001 dddddd -- COM/COMB   Complement Word/Byte
+              Calculates the ones-complement of the operand,
+              and stores it.  The ones-complement is formed by
+              inverting each bit (0->1, 1->0) independently.
+
+          b 000 010 010 dddddd -- INC/INCB   Increment Word/Byte
+              Adds one to the destination.
+
+          b 000 101 011 dddddd -- DEC/DECB   Decrement Word/Byte
+              Subtracts one from the destination.
+
+          b 000 101 100 dddddd -- NEG/NEGB   Negate Word/Byte
+              Calculates the twos-complement of the operand,
+              and stores it.  The twos-complement is formed by
+              adding one to the ones-complement.  The effect is
+              the same as subtracting the operand from zero.
+
+          b 000 101 101 dddddd -- ADC/ADCB   Add Carry Word/Byte
+              Adds the current value of the carry flag to the
+              destination.  This is useful for implementing
+              arithmetic subroutines with more than word-sized
+              operands.
+
+          b 000 101 110 dddddd -- SBC/SBCB   Subtract Carry Word/Byte
+              Subtracts the current value of the carry flag from
+              the destination.  This is useful for implementing
+              arithmetic subroutines with more than word-sized
+              operands.
+
+          b 000 101 111 dddddd -- TST/TSTB   Test Word/Byte
+              Sets the N (negative) and Z (zero) condition codes
+              based on the value of the operand.
+
+          b 000 110 000 dddddd -- ROR/RORB   Rotate Right Word/Byte
+              Rotates the bits of the operand one position to
+              the right.  The right-most bit is placed in the
+              carry flag, and the carry flag is copied to the
+              left-most bit (bit 15) of the operand.
+
+          b 000 110 001 dddddd -- ROL/ROLB   Rotate Left Word/Byte
+              Rotates the bits of the operand one position to
+              the left.  The left-most bit is placed in the
+              carry flag, and the carry flag is copied to the
+              right-most bit (bit 0) of the operand.
+
+          b 000 110 010 dddddd -- ASR/ASRB   Arithmetic Shift Right Word/Byte
+              Shifts the bits of the operand one position to
+              the right.  The left-most bit is duplicated.  The
+              effect is to perform a signed division by 2.
+
+          b 000 110 011 dddddd -- ASL/ASLB   Arithmetic Shift Left Word/Byte
+              Shifts the bits of the operand one position to
+              the left.  The right-most bit is set to zero.  The
+              effect is to perform a signed multiplication by 2.
+
+          b 000 110 100 dddddd -- MARK       Mark/Unused
+              Used as part of one of the subroutine call/return
+              sequences.  The operand is the number of parameters.
+
+          b 000 110 101 dddddd -- MFPI/MFPD  Move From Prev. Instruction/Data
+              Pushes a word onto the current R6 stack from the
+              operand address in the previous address space, as
+              indicated in the PSW.  On PDP-11s that do not
+              support separate instruction and data spaces, MFPD
+              is treated the same as MFPI.
+
+          b 000 110 110 dddddd -- MTPI/MTPD  Move To Previous Instruction/Data
+              Pops a word from the current stack as indicated in
+              the PSW to the operand address in the previous
+              address space, as indicated in the PSW.  On
+              PDP-11s that do not support separate instruction
+              and data spaces, MTPD is treated the same as MTPI.
+
+          b 000 110 111 dddddd -- SXT        Sign Extend/Unused
+              Sets the destination to zero if the N (negative)
+              flag is clear, or to all ones if N is set.  This
+              is useful for implementing arithmetic subroutines
+              with more than word-sized operands.
+
+Branches
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |b|0|0|0|b|b|b|b|d|d|d|d|d|d|d|d|
+                     |  Branch Code  |  Destination  |
+
+      The destination of a branch is +127 to -128 words from the word
+      following the branch instruction itself.  This seems slightly
+      odd, until you realize the sequence of events: the branch
+      instruction is read from memory and the PC incremented.  If the
+      branch is to be taken, the offset is then added to the current
+      value of the PC.  Since the PC has already been incremented, the
+      offset is thus relative to the following word.  Note that all
+      branch instructions are one word long.
+
+      The various branches test the values of specific condition
+      codes, and if the tests succeed, the branch is taken.  The
+      condition codes are N (negative), Z (zero), C (carry), and V
+      (overflow).  In the table below, the branch tests are shown as
+      boolean expressions.  `x' stands for exclusive-OR.  `v' stands
+      for inclusive-OR.
+
+          0 000 000 1dd dddddd   BR:   Branch Always
+          0 000 001 0dd dddddd   BNE:  Branch if Not Equal (Z==0)
+          0 000 001 1dd dddddd   BEQ:  Branch if EQual (Z==1)
+          0 000 010 0dd dddddd   BGE:  Branch if Greater or Equal (NxV == 0)
+          0 000 010 1dd dddddd   BLT:  Branch if Less Than (NxV == 1)
+          0 000 011 0dd dddddd   BGT:  Branch if Greater Than (Zv(NxV) == 0)
+          0 000 011 1dd dddddd   BLE:  Branch if Less or Equal (Zv(NxV) == 1)
+          1 000 000 0dd dddddd   BPL:  Branch if PLus (N == 0)
+          1 000 000 1dd dddddd   BMI:  Branch if MInus (N == 1)
+          1 000 001 0dd dddddd   BHI:  Branch if HIgher (C==0 and Z==0)
+          1 000 001 1dd dddddd   BLOS: Branch if Lower Or Same (CvZ == 1)
+          1 000 010 0dd dddddd   BVC:  Branch if oVerflow Clear (V == 0)
+          1 000 010 1dd dddddd   BVS:  Branch if oVerflow set (V == 1)
+          1 000 011 0dd dddddd   BCC:  Branch if Carry Clear (C == 0)
+              also known as
+                                 BHIS: Branch if Higher Or Same
+          1 000 011 1dd dddddd   BCS:  Branch if Carry Set (C == 1)
+              also known as
+                                 BLO:  Branch if Lower
+
+Condition Code Operations
+                      _ _ _ _ _ _ _ _ _ _:_ _ _:_ _ _
+                     |0|0|0|0|0|0|0|0|1|0|1|s|N|Z|V|C|
+                     |     O p c o d e     | | Mask  |
+
+     General opcode 000240x. Set/Clear corresponding bits depending on sense
+     of bit 04 (set=1, clear=0).  Codes 240 and 260 set/clear no bits
+     and are, thus, used as NOP.  Although specific mnemonic are provided
+     for each flag and all flags, any combination may actually be set or
+     cleared at a time.
+
+     General mnemonics are:
+
+          CLx   Clear x, where x is N, Z, V, or C
+          SEx   Set x, where x is N, Z, V, or C
+          CCC   Clear all condition codes
+          SCC   Set all condition codes
+
+          0 000 000 010 1s0 000   NOP/NOP: No Operation
+          0 000 000 010 1s0 001   SEC/CLC: Set/Clear Carry
+          0 000 000 010 1s0 010   SEV/CLV: Set/Clear Overflow
+          0 000 000 010 1s0 100   SEZ/CLZ: Set/Clear Zero
+          0 000 000 010 1s1 000   SEN/CLN: Set/Clear Negative
+          0 000 000 010 1s1 111   SCC/CCC: Set/Clear All Condition Codes
+
+Other, Miscellaneous
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |0|0|0|0|1|0|0|s|s|s|d|d|d|d|d|d|
+                     |   Opcode    |Stack|Destination|
+
+          0 000 400 sss dddddd -- JSR        Jump to Subroutine
+              Effectively pushes the current PC onto the stack pointed
+              to by register sss, and loads the indicated destination
+              address into the PC.  The actual sequence of steps taken
+              is:
+
+                  MOV <source>,-(R6)
+                  MOV PC,<source>
+                  JMP <destination>
+
+              So, it doesn't really push the address from where
+              you are calling on the stack, but instead loads
+              the calling address into the specified source
+              register (after saving the original contents). It
+              then jumps to the destination. The fun part is (as
+              usual with the PDP-11) that the PC is a general
+              register, and the description above is the result
+              when the PC is used as the source.
+
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |0|0|0|0|0|0|0|0|2|0|0|0|0|s|s|s|
+                     |          Opcode         |Stack|
+
+          0 000 000 100 000 sss -- RTS        ReTurn from Subroutine
+              Effectively pops the new PC from the stack pointed to by
+              register sss.  For predictable results, it is suggested
+              that the same register should be used as was named in
+              the corresponding JSR instruction.
+
+              The actual operations involved are:
+
+                  MOV <source>,PC
+                  MOV (R6)+,<source>
+
+              This is the reverse of JSR. Obviously, the finesse
+              here too is that you can use the PC, to get what
+              people normally consider a CALL/RETURN function.
+
+              Why is it done like this then? Well, consider this
+              example:
+
+                  ...
+                       JSR   R0,FOO
+                       .WORD A
+                       .WORD B
+                       MOV   R1,C
+                  ...
+
+                  FOO: MOV   @(R0)+,R1
+                       ADD   @(R0)+,R1
+                       RTS   R0
+
+              This type of parameter passing is used extensively
+              in the PDP-8 and PDP-10), for example.  Also, the
+              FORTRAN runtime system on the PDP-11 do it this
+              way.  (It is fairly easy to write a compiler who
+              generates such a calling sequence, and then have a
+              library of functions which expect this calling
+              convention.)
+
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |0|0|0|0|0|0|0|0|0|1|d|d|d|d|d|d|
+                     |       Opcode      |Destination|
+
+          0 000 000 001 ddd ddd -- JMP        JuMP
+              Loads the destination address into the PC, thus
+              effecting an unconditional jump.  Note that a trap will
+              occur on some systems if an odd address is specified.
+              On others, the destination is silently rounded down to
+              the next-lower even address (i.e., the right-most bit is
+              ignored).
+
+                      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                     |0|0|0|0|0|0|0|0|0|0|0|0|0|i|i|i|
+                     | |     |     |     |     | Op  |
+
+          0 000 000 000 000 000 -- HALT        Halts the machine
+              Ceases I/O, and gives control to the console.  Operator
+              intervention is required to continue or restart the
+              system.
+
+          0 000 000 000 000 001 -- WAIT       WAIT for interrupt
+          0 000 000 000 000 010 -- RTI        ReTurn from Interrupt
+          0 000 000 000 000 100 -- BPT        BreakPoint Trap
+          0 000 000 000 000 101 -- RESET      Initializes the system
+
+     Other arithmetic and floating point instructions were added to
+     the basic set over the years, but those listed above form the
+     core PDP-11 instruction set.
+
+========================================================
+
+The PDP-11 Maintenance Panel and Front Panel
+
+The PDP-11 Maintenance Panel was introduced with the 11/20. It comprised
+of two single height boards, a lamp driver and a lamp/switch board.
+Through the use of the four switches, the processor clock could be
+interrupted and single stepped through the ISR and BSR timing states of
+the 11/20. Timing state numbers, Condition Codes and certain other flags
+were displayed on the maintenance panels 16(?) lamps. Of course, having
+the machine frozen in suspended animation also facilitated the
+troubleshooting of the internal circuits by  oscilloscope.
+
+On the 11/40 there were two slots into which a maintenance panel could
+be plugged. In the first slot you could single step the processor clock
+and cycle through the microcode program. The processor could be made to
+stop at a specific microcode address (MPC) set in the front panel
+switches.  The panel could be plugged into a different slot and perform
+the same function for the Floating Point Processor. If you thought that
+the PDP-11 had wide and complex micro-instructions, you should have
+seen the FPP!
+
+The panel also performed the same function on the 11/05 (no floating
+point) and was also used on the 11/70. A good technician would have been
+able to determine a fault on an 11/40 and 11/70 using nothing more than
+the maintenance panel, front panel, and knowledge of the inter-relationships
+of the processor's data paths.
+
+[I am unclear whether the Maint Panel was used in later PDP-11s. I seem
+to remember that certain of the micro-stepping and micro-trapping
+functions were incorporated into the calculator-style front panels of
+the 11/04, /34, /44 and /60. And I draw a total blank re: the later
+Micro-PDP-11's. Perhaps someone can fill in some detail here?  -MMcC]
+
+The front panel on the PDP-11 went through some major revisions. The
+original 11/20, 11/15, and later the 11/05 and 11/10, 11/40 and 11/35,
+11/45, 11/50, 11/55, 11/70 and 11/74 were equipped with what the
+purists regard as the "real" front panels. Subsequent machines had
+chicklet-calculator octal panels, or almost nothing than boot/halt
+switches.
+
+The 11/20 panel is laid out roughly as (not to scale):
+
+   +-------------------------------------------------------+
+   |        ADDRESS  REGISTER       RUN BUS    FETCH EXEC  |
+   |    +---+---+---+---+---+---+  +---+---+  +-----+----+ |
+   |    |ooo|ooo|ooo|ooo|ooo|ooo|  | o | o |  |  o  |  o | |
+   |    +---+---+---+---+---+---+  +---+---+  +-----+----+ |
+   |               DATA             SRC DST        ADDR    |
+   |      +-+---+---+---+---+---+  +---+---+      +----+   |
+   |      |o|ooo|ooo|ooo|ooo|ooo|  |ooo|ooo|      | ooo|   |
+   |      +-+---+---+---+---+---+  +---+---+      +----+   |
+   |         SWITCH REGISTER        L E C H S T     D      |
+   |\|/ +---+---+---+---+---+---+  +-+-+-+-+-+-+   +-+     |
+   | O  |ttt|ttt|ttt|ttt|ttt|ttt|  |m|m|m|t|t|m|   |m|     |
+   |    +---+---+---+---+---+---+  +-+-+-+-+-+-+   +-+     |
+   +-------------------------------------------------------+
+
+The small circles are incandescent lamps (i.e., prone to burning out).
+The odd thing at the lower-left is the keyswitch.  The 10 o'clock
+position is OFF, straight up is POWER, and 2 o'clock is PANEL LOCK.
+
+The lower-case `t's are toggle switches.  The lower-case `m's are
+momentary-contact switches.  They are all large paddles, coloured
+alternately magenta and orange. The left bank of switches are used to
+set the address and data registers.  The action switches on the right are:
+
+    - L  LOAD ADDR, copies the switch register to the address register
+    - E  EXAM, loads the data register from the memory location indicated
+         in the address register
+    - C  CONT, continues the processor from a HALT
+    - H  ENABLE/HALT, enables the processor to run if up, stops it if down
+    - S  S-INST/S-CYCLE, selects the style of single-stepping
+    - T  START, resets the system and starts the processor
+    - D  DEP, deposits the contents of the switch register in the
+         memory location indicated by the address register
+
+The way ENABLE/HALT, CONT, and START work are (this is true of an
+11/70 as well, and presumably of everything in-between):
+
+    - ENABLE/HALT: If in the HALT position the machine will HALT at the
+      proper moment, depending on the S-INST/S-CYCLE. If in the ENABLE
+      position, the S-INST/S-CYCLE is ignored.
+
+    - CONT will just start the processor at where the PC points.
+
+    - START will issue a bus reset before starting.
+
+If you want to do a bus reset without running the machine, you switch
+HALT, and depress START. I don't think it executes anything at that
+time, which would imply that START can do less than CONT, which will
+single-step in this case.
+
+The 11/05 economized on the front panel. LEDs replaced lamps and there
+was only a single row of them. They were multiplexed, and whether they
+displayed data or address depended on the function being performed.
+Action switches remained similar to the 11/20 with the possible
+omission of the single step. [Help needed here ...]. The switches were
+small and made of white plastic.
+
+The other machines mentioned above had serious front panels. Great big
+triangular wedge shaped keys; two rows of data and address lines; and
+function lights. The 11/40 had:
+
+        Run,       Bus,         User,
+        Processor, Console,     Virtual
+
+The 11/55 had:
+
+        User I     Super I      Kernel I        Prog Phy
+        User D     Super D      Kernel D        Cons Phy
+
+        Data Paths              u-Address FPP/CPU
+        BUS Register            Display Register
+
+           ...and a pair of rotary switches
+           to select between the two sets of displays!
+
+The 11/70 display was similar if slightly different in detail. Of course
+it had 22 of those nice big Data/Address switches!
+
+With the advent of the 11/04, 11/34, and 11/60, two consoles were offered.
+One could go the minimalist approach and purchase the cheapie and get a
+Boot and Halt switch along with a Run lamp. Not exactly loved by those
+that needed to interact with the machines intimately! Alternatively one could
+purchase the more fully featured (KY11-B ?) panel with the chicklet keys
+and calculator face. Many technicians had their own personal chicklet
+panels for troubleshooting those machines ordered with the minimal
+panel. 
+
+The 11/60 was shipped with only the calculator-style panel. I seem to
+recall that DEC might have relented and done likewise with later 11/34
+models.
+
+More recent PDP-11s seem to have nothing more than a power switch,
+although I believe a button or two and a couple of LED's might lurk
+under the covers if you know where to look for them.
+
+========================================================
+
+Trivia/Humour/Stories
+The 11/70 Hack:
+
+     The following was part of a quiz posted in a Newsgroup:
+
+       3.  Tom Farrin is famous for a hack he did to DEC's PDP-11/70.
+           This was a trace cut and jump inside the CPU which:
+  
+       a)  increased the system clock speed by 12.5%
+       b)  enabled IEEE-compatible floating-point arithmetic
+       c)  froze the contents of the cache
+       d)  disabled the Unibus reset that occurs automatically on a bus error
+       e)  made separate instruction and data space available in user mode
+       [....]
+
+     to which Robert Herndon provided additional insight:
+
+       "and the answer is listed as `E'".  I was present at a lecture he
+       gave at the 1978 Unix Users Group Conference in NYC (this was just
+       before they asked BTL for official permission to call themselves
+       this, and were turned down, after which the conferences became
+       "Usenix" conferences).  In it, he described how he needed the MFPI
+       instruction (move from previous instruction space; it gets a word
+       of data from the "previous mode"'s instruction space) in order to
+       efficiently determine the number of arguments pushed on the stack.
+
+       This was because his Lisp interpreter was too big to run without
+       running in separate I & D spaces (type 411 binary, as opposed to
+       407 (unshareable), or 410 (shareable, but common address space).
+       Running programs in separate I & D spaces was an everyday event on
+       PDP-11s at the time, but separate I&D binaries could not use the
+       nargs() procedure (which looked at the caller's instructions).
+
+       Since his program was running in separate I & D spaces, any
+       loads to look at the caller's instructions would simply load a
+       word from the data space at the same address.  DEC, in their
+       wisdom, had made the MFPI and MFPD instructions privileged, so he
+       couldn't use them to look at his instruction space.  So he made a
+       system call available to do this function, but found that it was
+       very slow.  And as he put it, that wasn't very satisfactory, and
+       "Well, there's this NAND gate, and if you cut this wire...", and
+       the room dissolved in laughter.  And then he told us that this cut
+       was available as a DEC field mod and gave us its number...
+
+The 407 Header
+
+     If you want another bit of trivia in this vein, the 407 header
+     number for Unix binaries is an artifact of the PDP-11's
+     instruction set.  This is a 'branch forward 7 words'.  In case you
+     installed your block-zero bootstrap without first stripping off
+     the eight-word header, this allowed it to run anyway (since the
+     code was position independent).  Other machines have used 407
+     headers ever since for no good reason... [rh]
+
+========================================================
+
+Who's Who?
+
+ - C. Gordon Bell is generally credited with the original design of the
+   PDP-8.  He was also involved with recommending what became the
+   PDP-11 when that design was competing with the design that probably
+   became the NOVA, and as vice president of research, he oversaw the
+   development of the DEC VAX family.
+
+ - Alan Kotok worked with Bell in working up the original specifications
+   of the PDP-8.
+
+ - Ben Gurley designed most of the big DEC machines, starting with the
+   PDP-1.  The actual design work on the -8, however, was done by Ed
+   deCastro, who later founded Data General to build the Nova.
+
+ - Ken Olson ran DEC from the beginning.
+
+ - Ed Yourdon hacked up the PAL III assembler for the -8, based on PAL
+   II.  He later became well known as a programming methodology guru.
+
+ - Charles Lasner developed P?S/8, and he is widely known as the grand old
+   man of the movement to preserve these historic machines.
+
+ - Wesley Clark developed the LINC while working at Lincoln Labs;  this
+   was the first 12-bit minicomputer built with DEC parts.
+
+ - Mary Allen Wilkes Clark developed the early LAP programs for the LINC.
+
+ - Douglas W. Jones wrote the PDP-8 FAQ, from which the introductory "What
+   is a PDP" is unabashedly cribbed.
+
+     Most of my [MMcC] direct knowledge is of the earlier -11's and
+     gets real hazy around the 11/5x - 11/9x boxes. However, the
+     following contributors have helped fill in the gaps here and
+     elsewhere in PDP-11 history, and otherwise helped with the
+     FAQ:
+
+- Tony Duell <ARD@SIVA.BRIS.AC.UK>
+- Ron Natalie <ron@sensor.com>
+- Johnny Billquist <bqt@Update.UU.SE>
+- Terry Kennedy <terry@spcvxb.spc.edu> (Please include ``PDP-11''
+  in the subject line)
+- Paul Repacholi <zrepachol@cc.curtin.edu.au>
+- Thor Lancelot Simon <tls@rek.tjls.com>
+- <JOHNH@PSYCH.SU.OZ.AU>
+- Mike Yankus <MIKE_YANKUS@STERLING.COM>
+- Don Stokes <don@zl2tnm.gen.nz>
+- David W. Peascoe <dwp@po.CWRU.Edu> 
+- Robert Herndon <rh@craycos.com>
+- Ronald Copley <copley1@marshall.edu>
+- Dieter Dworkin Mu:ller <dworkin@village.org>
+- Bob Kaplow, current email address unknown
+- Merton C. Crockett <mcc@wlv.iipo.gtesc.com> 
+- Brian McCarthy, current email address unknown
+- Hans-Joachim Poehls, current email address unknown
+- Megan Gentry <mbg@world.std.com>, <gentry@zk3.dec.com>.
+  Web page http://world.std.com/~mbg/
+- Bernd Ulmann <ulmann@fafner.zdv.uni-mainz.de>
+- Roger N Wallace <rwallace@world.std.com>
+
+========================================================
+
+Mark Crispin's 1986 list of PDP's
+With comments and spelling corrections by Charles Lasner, Bernd
+Ulmann, and Mike McCrohan
+
+        Date: Wednesday, 20 August 1986  03:42-EDT
+        From: Mark Crispin <MRC%PANDA@SUMEX-AIM.ARPA>
+        To:   TOPS-20@SU-SCORE.ARPA, Boken@RED.RUTGERS.EDU
+        Re:   DEC's PDP's
+
+     A number of people have requested my list of all the DEC PDP's,
+so I thought I'd bore you all with it.
+
+     The PDP-1 was an 18 bit machine.  It was DEC's first computer, and
+some of the first timesharing systems were designed for it.  It's also
+unique in being one's complement; all later DEC computers were two's
+complement.  Some machines, such as one of MIT's PDP-1s, were in
+operation until the late '70s.
+
+[Charles Lasner comments: The LINC portion of the LINC-8 and
+PDP-12 are one's complement!]
+
+     The PDP-2 was a designation reserved for a 24 bit machine, but as
+far as I can tell it was never even designed and definitely none were
+ever built.
+
+     The PDP-3 was a 36 bit machine that was designed but never built by
+DEC.  However, Scientific Engineering Institute built one in 1960.
+
+     The PDP-4 was an 18 bit machine that was intended to be a cheaper,
+slower alternative to the PDP-1.  It was so slow that it didn't sell
+well, although it was interesting for its auto-incrementing memory
+registers.  It was not program-compatible with the PDP-1, but its
+instruction set was the basis of DEC's future 18 bit computers.
+
+     The PDP-5 was a 12 bit machine designed to be a small laboratory
+system.  It used many of the ideas in the LINC (Laboratory Instruction
+Computer, designed by Lincoln Labs at MIT, some of which were built by
+DEC).
+
+     The PDP-6 was a 36 bit machine and the first machine to implement
+the most wonderful computer architecture known to man. It was
+rather expensive and difficult to maintain, and not many were sold.  As
+a result, DEC cancelled 36 bit computers for what was to be the first of
+many times.
+
+     The PDP-7 was an 18 bit machine and the sucessor to the PDP-4.  It
+was a major price/performance win over the PDP-4 and the first DEC
+computer to use wire-wrapping.
+
+     The PDP-8 was a 12 bit machine and the sucessor to the PDP-8.
+
+[Charles Lasner comments: I assume he means -5!]
+
+It basically defined the term "minicomputer", and went through several
+incarnations.  The original PDP-8 was followed by the extremely slow
+PDP-8/S (as bad as the PDP-4 was to the PDP-1, but at least the /S was
+program-compatible).  DEC recouped with the PDP-8/I (using MSI
+integrated circuits) and the smaller PDP-8/L, and somewhat later came
+out with the "Omnibus 8" machines -- the PDP-8/E, the PDP-8/F (a
+half-sized version of the PDP-8/E), the PDP-8/M (an OEM version of the
+PDP-8/F), and the final machine, the single board PDP-8/A.  The
+PDP-8/A still exists after a fashion as a current DEC product.
+
+     The PDP-9 was an 18 bit machine and the sucessor to the PDP-7.  It
+had a faster memory than the PDP-7 and was the first microprogrammed DEC
+computer.  Modulo a 300 wire(!) ECO required in the first machines, the
+PDP-9 was a reliable machine and some are still in operation today.
+There was a short-lived PDP-9/L.
+
+[Comment by Bernd Ullman: As far as I know the PDP-9 had a 64
+word by 36 bit read-only control-store with an access time of 212 ns
+(it was a transformer coupled rope memory). The first intention was to
+build a horizontally programmed machine but this was dropped because
+of the resulting word length needed for the control-words. So some
+(most ?) of the control signals were encoded and this led to a typical
+diagonally microprogrammed machine I think.]
+
+[Mike McCrohan comments: 212 ns seems fast to me for a PDP-9 in
+the mid 1960's when a core memory of 5 years later was cycling at
+900ns, and PDP-11 instructions were at about 1 microsecond.]
+
+     The PDP-10 was a 36 bit machine and the sucessor to the PDP-6.  It
+is especially noted for its software, which represents the pinnacle of
+DEC software engineering and has never been equalled.  The first KA10,
+largely installed in universities, created a whole generation of
+timesharing hackers.  The follow-on KI10, with paging and using IC's
+instead of discrete components but otherwise unexciting, mostly was sold
+to commercial organizations.  The KL10 went through several incarnations
+and is today the most representative of this marvelous machine.  The
+KS10 was a small, low-speed (approximately KA10 performance) processor
+which was DEC's last successful implementation of this architecture. 
+
+     The PDP-11 was a 16-bit machine that went through more
+implementations and operating systems than can be counted.  Presently
+it superceded the less powerful PDP-8 as the representative
+minicomputer.  While the PDP-11 used octal, it was in its deep heart
+of hearts a hexadecimal machine, and the first indicator of the
+creeping IBMification of DEC that took full fruit in the VAX.  [I can
+hear the flames now...]  Rather than fight it the customers loved it;
+more PDP-11's have been sold than any other DEC computer (possibly
+more than all the others combined).
+
+     The PDP-12 was a 12 bit machine and the sucessor to the PDP-8.  It
+combined a LINC and a PDP-8 type processor in the same box and basically
+was a new model of the LINC-8 which was the same thing.
+
+     No PDP-13 was ever designed or built. Even DEC gets superstitious.
+
+     The PDP-14 was a 12 bit machine with a 1 bit register.  It was used
+as a process control engine in applications that were felt to be too
+rugged for a PDP-8, and basically replaced a set of relays.  Later DEC
+made PDP-8's suitable for this sort of thing, but it didn't stop them
+from the ultimate silliness of building a PDP-14 that used a PDP-8 as
+its console processor!
+
+[Charles Lasner comments: I remember something about a KL8-JA-oriented
+diagnostic that was for checking out somesuch configuration!]
+
+     The PDP-15 was an 18 bit machine and the final one of this design
+built by DEC.  More PDP-15's were built and sold than any of the others,
+
+[Charles Lasner comments: I assume he means other 18-bit DEC machines!]
+
+several incarnations including some which used a PDP-11 as a front end.
+Apparently the cancellation of the PDP-15 came as a great surprise to
+the "Tiger Team" who worked on it, although considering its general
+ungainliness compared to comparable performance PDP-11's it wasn't
+surprising.  In many ways the PDP-15 died for the same reason the PDP-10
+did.
+
+     The PDP-16 was a "roll your own" 16 bit machine based on various
+"building blocks".  Every PDP-16 was essentially custom-designed by the
+customer.  It got a fair amount of attention when it was announced but
+evidentally didn't sell very well.
+
+     There was no PDP-17 or any other designator.  DEC apparently
+decided that "PDP" had a perjorative ring to it.
+
+========================================================
+
+Appendix A: Related FAQ Sites
+ * * * PDP-11 ftp sites informational posting * * *
+
+From: shoppa@altair.krl.caltech.edu
+
+The most current version of this list will be available via anonymous
+ftp from sunsite.unc.edu as the file pdp-11.ftp in the directory
+/pub/academic/computer-science/history/pdp-11.
+
+Site:        sunsite.unc.edu (152.2.254.81)
+Directory:   /pub/academic/computer-science/history/pdp-11
+Maintainer:  Tim Shoppa (shoppa@altair.krl.caltech.edu)
+Comments:    main pdp-11 directories are:
+	hardware      Miscellaneous documentation on PDP-11 hardware,
+                      including Ron Copley's guide to Unibus and Q-bus
+                      modules (field-guide.txt)
+        decusdocs     Compilations from DECUSserve coferences,
+                      containing very useful hardware and software
+                      tips.
+	rt            RT-11 sig tapes from DECUS
+        rsx           RSX-11 sig tapes from DECUS
+	emulator      PDP-11 emulators
+	games         Games for PDP-11's (various OS's)
+	kermit        krt and k11 versions of pdp-11 kermit
+	language      The PDP-11 C compiler from DECUS
+	utils         Various PDP-11 utilities
+	teco	      Teco stuff from SIG tapes and other sources.
+
+Site:        ftp.update.uu.se (130.238.11.14)
+Directory:   /pub/pdp11
+Maintainer:  Johnny Billquist (bqt@update.uu.se)
+Comments:    Several RT-11 sig tapes, in rt/11s108, rt/11s109, rt/11s113,
+             and rt/11sp68 subdirectories.
+             DEC Professional stuff, in pos subdirectory.
+
+Site:        tats.wizvax.net [199.181.141.53]
+Directory:   pub/e11, pub/putr, pub/pdp11
+Maintainer:  John Wilson (wilson@tats.wizvax.net)
+Comments:    PDP-11 simulator for DOS PCs, program to read/write RX50s (and
+             other media), Fuzzball distribution, DL11 MIDI information
+
+Site:        shop-pdp.kent.edu (131.123.1.153)
+Maintainer:  Alan Baldwin (???)
+Comments:    TCPIP for TSX+ systems.
+	     Cross assemblers for many micro's.
+
+Site:	     ftp.village.org (204.144.255.51)
+Maintainer:  Dieter Dworkin Mu:ller (dworkin@village.org)
+Comments:    pdp-11 faq
+
+Site:        en.ecn.purdue.edu (128.46.149.59, 128.46.128.59)
+Directory:   pdp-11
+Maintainer:  Mike Young (young@ecn.purdue.edu)
+Comments:    ACPs for RSX-11, DECUS C compiler.
+
+Site:        ftp.spc.edu (192.107.46.118)
+Directory:   [anonymous.*]
+Maintainer:  Terry Kennedy (terry@spcvxa.spc.edu)
+Comments:    [finger11]             Finger for RSTS
+             [k11]                  Kermit's for various PDP-11 OS's
+             [rstscle]              Command line editor for RSTS
+             third-party-disks.txt  Excellent docs on RD5n disks.
+
+========================================================
+
+Where can I buy [whatever] for my PDP-11?
+DISCLAIMER:
+     The information in this section is provided by the vendors
+     themselves, at their request.  They assume all responsibility for
+     the validity of their respective claims.  No endorsement is
+     implied by inclusion in this list.  No slight is implied by
+     exclusion from this list.  Here's
+     the full 
+     disclaimer.
+
+Note to vendors:Email your URL and product description
+(no more than three lines please) and a link will be provided as soon
+as is practical.  Address your information to faq11@village.org.
+
+    - Strobe Data, Inc., http://www.strobedata.com/strobe/
+      In order to preserve the tested, mature code running on
+      the PDP-11 series machines, we have built a PDP-11 in a
+      PC. Our product is the Osprey and runs the PDP-11 code
+      unmodified.  Submitted by jcook@halcyon.com.
+
+    - John Comeau, http://world.std.com/~jcomeau/resume.html
+      RSX Drivers and Utilities.  Submitted by jcomeau@world.std.com.
+
+    - Wilson Laboratories, Inc., 714-998-1980, M-F 8:00am - 5:00pm PDT,
+      FAX 714-974-4980
+      The WBC-3000 removable media disk, is a direct replacement
+      for DEC and Pertec type 14 inch cartridge disk drives with
+      fixed or removable storage capacity of 2 1/2 to 30MB.  This
+      product utilizes a Syquest EZ135 135MB removable cartridge
+      disk drive or a removable hard disk drive canister.  Submitted
+      by R.Wilson-DBar@worldnet.att.net.
+
+========================================================
+
+Editor/Maintainers
+
+- Alan R. Sieving <ars@world.std.com>
+- Johnny Billquist <bqt@Update.UU.SE>
+- Robert Smith <rmsmith@csc.com>
+- John O. Lene Comeau <jcomeau@world.std.com>
+- Dieter Dworkin Mu:ller <dworkin@village.org>
+
+FTP Location:       anon-ftp ftp.village.org in pub/pdp-11/faq
+WWW Location:       http://www.village.org/pdp11/faq.html
+FTP/WWW Maintainer: Dieter Mu:ller <dworkin@village.org>
+
+========================================================
+Revision History
+
+- Dec 1996     Reformat so that text and HTML can be generated from
+               the same source file, recreated charts and graphics
+- Apr 1996     Split WWW FAQ into pieces and placed in village.org
+- Feb 1996     Added list of vendors with links [jlc]
+- Dec 1995     First WWW version of the FAQ hacked together [jlc]
+- Jan 1995     Mike McCrohan <mccrohan@iol.ie> retires
+               as editor.
+- Dec 1994     Further info on PDT's, 11/93, Additions
+               to Languages
+- May 1994
+             - Added section on the Maintenance Panel
+             - Updated the Operating Systems.
+             - Added Mark Crispin's 1986 list of PDP's 
+             - Appendix A: Related FAQ Sites 
+             - 11/44 update
+             - Added to PRO, PDT sections
+
+- Feb 1994     Added some detail to the PDT section
+- Jan 1994     Current version - Now available via FTP
+- Aug 1993     Original version
+
+Note:
+        The word "I" appears at a number of places throughout the text.
+        It does not always refer to the FAQ maintainer, but is often the
+        writing of one of the other contributors. Perhaps one of these
+        days we will organise an overall rewrite of the FAQ to make it
+        slightly less disjointed. Maybe when I get a Round Tuit. :-)
+        Mike McCrohan
+
+========================================================
